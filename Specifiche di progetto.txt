@@ -1,0 +1,37 @@
+﻿Requisiti:
+
+Patch Antenna per applicazioni Wifi 802.11
+Broadside Array lineare (1x2 oppure 1x4)
+Banda ISM 2400 – 2483.5 MHz (dovrebbe bastare per tutti i canali wifi)
+Rete Alimentazione singola e array
+Substrato Rogers Ro4000
+
+Da cui le specifiche:
+-dell'antenna
+f0= 2,45GHz
+Bw= 100MHz
+G=1dB
+
+-di substrato :
+Er=4.4
+h=1.6mm
+metallizzazione PEC di spessore infinitesimo
+
+
+Sintesi
+
+Dalla frequenza centrale con le formule si ha 
+
+W= 37.26 mm
+L= 28.83 mm
+Er(eff)= 4.08
+
+
+Adattamento impedenza a 50 ohm
+Rin= formule
+
+Trasformatore in lambda/4 
+Ottengo  W del trasformatore imponendo ZA= sqrt(Zc*Zin)
+Zin = 
+
+
