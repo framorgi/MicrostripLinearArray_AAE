@@ -14,8 +14,8 @@ Per un singolo elemento radiante
 
 Per la schiera
 * Calcolo e dimensionamento dell'Array Factor su matlab 
-*Simulazione della schiera su FEKO
-*Tuning
+* Simulazione della schiera su FEKO
+* Tuning
 
 
 ## Relazione
