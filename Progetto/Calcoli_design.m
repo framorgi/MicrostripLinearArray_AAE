@@ -83,6 +83,7 @@ G12=a1/(120*pi*pi);     %in siemens
 
 Rin0= 1/(2*(G1+G12))
 
+
 %CALCOLO DELLA MICROSTRISCIA
 %Definisco una  linea di microstriscia di dimensione Wm tale che sia a Zc=
 %50 ohm
@@ -122,8 +123,9 @@ L_transf=lambdag/4
  
 
 %% ARRAY
-% Department of Engineering, University of Fukui
-% Coded by Chan Sokthai (sokthai@msn.com)
+% 
+%
+% Coded by Chan Sokthai (sokthai@msn.com) -  Department of Engineering, University of Fukui
 clear all;
 % element numbers
 N = 25;
