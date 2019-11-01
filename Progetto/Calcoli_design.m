@@ -1,5 +1,6 @@
 
-
+clear all;
+close all;
 %% COSTANTI
 c=3*10^8;
 v0=3e8;
@@ -41,6 +42,7 @@ deltaL=h*0.412*((Ereff+0.3)*(W/h+0.264))/((Ereff-0.258)*(W/h+0.8));
 %Ricavo L dalla Balanis (14-7)  
 
 L=(1/(2*f0*sqrt(Ereff)*sqrt(mu0*e0)))-2*deltaL
+
 
 
 %% Z-Match
@@ -117,16 +119,25 @@ L_transf=lambdag/4
 %
  y0= L/pi*acos(sqrt(50/Rin0))
  
- 
- 
- 
- 
+%% PLOT TABLE
+% 
+
+%  Patch = table(W,L,h,f0,Er,Ereff);
+ fig=uifigure('Name','Design della Patch');
+ fig.Position = [500 500 740 210];
+ uit1=uitable(fig,'Data',[W L h f0 Er Ereff],'ColumnName',{'W'; 'L'; 'h'; 'f0'; 'Er'; 'Ereff'});
+ uit1.Position = [20 130 680 60];
+ uit2=uitable(fig,'Data',[Rin0 y0 ],'ColumnName',{'Rin0'; 'y0 a  Rin=50 ohm'});
+  uit2.Position = [20 70 680 60];
+   uit2=uitable(fig,'Data',[Z0 L_transf],'ColumnName',{'Z0 del trasformatore'; 'L del trasformatore( lambdag/4)'});
+  uit2.Position = [20 10 680 60];
+
 
 %% ARRAY
 % 
 %
 % Coded by Chan Sokthai (sokthai@msn.com) -  Department of Engineering, University of Fukui
-clear all;
+
 % element numbers
 N = 25;
 % element spacing
@@ -150,6 +161,7 @@ for theta=1:360
     
 end
 % plot the array factor
-polar(deg2rad,AF);
+% figure;
+% polar(deg2rad,AF);
 
 %%
