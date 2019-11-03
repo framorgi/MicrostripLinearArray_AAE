@@ -1,6 +1,7 @@
 
 clear all;
 close all;
+clc;
 %% COSTANTI
 c=3*10^8;
 v0=3e8;
