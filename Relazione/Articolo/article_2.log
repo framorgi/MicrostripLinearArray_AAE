@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.24)  28 OCT 2019 14:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.4)  4 NOV 2019 22:20
 entering extended mode
 **./article_2.tex
 (article_2.tex
-LaTeX2e <2018-12-01>
+LaTeX2e <2019-10-01>
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls"
-Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+Document Class: article 2019/08/27 v1.4j Standard LaTeX document class
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\size10.clo"
-File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+File: size10.clo 2019/08/27 v1.4j Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@section=\count81
@@ -32,7 +32,7 @@ File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
 (C:\Users\Fra\AppData\Roaming\MiKTeX\2.9\tex/latex/microtype\microtype.sty
-Package: microtype 2019/02/28 v2.7b Micro-typographical refinements (RS)
+Package: microtype 2019/10/10 v2.7c Micro-typographical refinements (RS)
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
@@ -42,12 +42,12 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \MT@count=\count88
 LaTeX Info: Redefining \textls on input line 790.
 \MT@outer@kern=\dimen103
-LaTeX Info: Redefining \textmicrotypecontext on input line 1336.
+LaTeX Info: Redefining \textmicrotypecontext on input line 1347.
 \MT@listname@count=\count89
 
 (C:\Users\Fra\AppData\Roaming\MiKTeX\2.9\tex/latex/microtype\microtype-pdftex.d
 ef
-File: microtype-pdftex.def 2019/02/28 v2.7b Definitions specific to pdftex (RS)
+File: microtype-pdftex.def 2019/10/10 v2.7c Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 914.
 LaTeX Info: Redefining \lslig on input line 914.
@@ -55,12 +55,12 @@ LaTeX Info: Redefining \lslig on input line 914.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
  (C:\Users\Fra\AppData\Roaming\MiKTeX\2.9\tex/latex/microtype\microtype.cfg
-File: microtype.cfg 2019/02/28 v2.7b microtype main configuration file (RS)
+File: microtype.cfg 2019/10/10 v2.7c microtype main configuration file (RS)
 )) ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.sty"
-Package: babel 2018/11/13 3.27 The Babel package
+Package: babel 2019/09/27 3.34 The Babel package
 
 ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\switch.def"
-File: switch.def 2018/11/13 3.27 Babel switching mechanism
+File: switch.def 2019/09/27 3.34 Babel switching mechanism
 )
 *************************************
 * Local config file bblopts.cfg used
@@ -73,7 +73,7 @@ File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
 Language: english 2017/06/06 v3.3r English support from the babel system
 
 ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.def"
-File: babel.def 2018/11/13 3.27 Babel common definitions
+File: babel.def 2019/09/27 3.34 Babel common definitions
 \babel@savecnt=\count90
 \U@D=\dimen104
 
@@ -112,10 +112,10 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.cfg"))
 (C:\Users\Fra\AppData\Roaming\MiKTeX\2.9\tex/latex/caption\caption.sty
-Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
+Package: caption 2019/09/01 v3.3d Customizing captions (AR)
 
 (C:\Users\Fra\AppData\Roaming\MiKTeX\2.9\tex/latex/caption\caption3.sty
-Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package: caption3 2019/09/01 v1.8d caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
 \captionmargin=\dimen113
 \captionmargin@=\dimen114
@@ -129,7 +129,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \c@ContinuedFloat=\count96
 )
 (C:\Users\Fra\AppData\Roaming\MiKTeX\2.9\tex/latex/booktabs\booktabs.sty
-Package: booktabs 2005/04/14 v1.61803 publication quality tables
+Package: booktabs 2019/10/08 v1.6180339 publication quality tables
 \heavyrulewidth=\dimen120
 \lightrulewidth=\dimen121
 \cmidrulewidth=\dimen122
@@ -186,7 +186,7 @@ Package: minifp 2013/12/30 v0.96. Macros for real number operations and a stack
 Loading lettrine.cfg
 (C:\Users\Fra\AppData\Roaming\MiKTeX\2.9\tex/latex/lettrine\lettrine.cfg))
 (C:\Users\Fra\AppData\Roaming\MiKTeX\2.9\tex/latex/enumitem\enumitem.sty
-Package: enumitem 2019/02/04 v3.8 Customized lists
+Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip44
 \enit@outerparindent=\dimen152
 \enit@toks=\toks18
@@ -203,7 +203,7 @@ Package: abstract 2009/06/08 v1.2a configurable abstracts
 \absparsep=\skip49
 )
 (C:\Users\Fra\AppData\Roaming\MiKTeX\2.9\tex/latex/titlesec\titlesec.sty
-Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \ttl@box=\box30
 \beforetitleunit=\skip50
 \aftertitleunit=\skip51
@@ -214,11 +214,8 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \titlewidthlast=\dimen156
 \titlewidthfirst=\dimen157
 )
-(C:\Users\Fra\AppData\Roaming\MiKTeX\2.9\tex/latex/titlesec\block.tss
-File: block.tss 2016/03/15
-)
 (C:\Users\Fra\AppData\Roaming\MiKTeX\2.9\tex/latex/fancyhdr\fancyhdr.sty
-Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
 \f@nch@headwidth=\skip52
 \f@nch@O@elh=\skip53
@@ -237,7 +234,7 @@ Package: titling 2009/09/04 v2.1d maketitle typesetting
 \droptitle=\skip63
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hyperref.sty"
-Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
+Package: hyperref 2019/09/28 v7.00a Hypertext links for LaTeX
 
 ("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\hobsub-hyperref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
@@ -256,7 +253,7 @@ Package hobsub Info: Skipping package `ifpdf' (already loaded).
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -289,7 +286,7 @@ Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 \Hy@pagecounter=\count109
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\pd1enc.def"
-File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2019/09/28 v7.00a Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
@@ -298,33 +295,33 @@ Now handling font encoding PD1 ...
 ("C:\Program Files\MiKTeX 2.9\tex/latex/00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 4519.
-Package hyperref Info: Link nesting OFF on input line 4524.
-Package hyperref Info: Hyper index ON on input line 4527.
-Package hyperref Info: Plain pages OFF on input line 4534.
-Package hyperref Info: Backreferencing OFF on input line 4539.
+Package hyperref Info: Hyper figures OFF on input line 4540.
+Package hyperref Info: Link nesting OFF on input line 4545.
+Package hyperref Info: Hyper index ON on input line 4548.
+Package hyperref Info: Plain pages OFF on input line 4555.
+Package hyperref Info: Backreferencing OFF on input line 4560.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4772.
+Package hyperref Info: Bookmarks ON on input line 4793.
 \c@Hy@tempcnt=\count111
 
 (C:\Users\Fra\AppData\Roaming\MiKTeX\2.9\tex/latex/url\url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5125.
+LaTeX Info: Redefining \url on input line 5152.
 \XeTeXLinkMargin=\dimen159
 \Fld@menulength=\count112
 \Field@Width=\dimen160
 \Fld@charsize=\dimen161
-Package hyperref Info: Hyper figures OFF on input line 6380.
-Package hyperref Info: Link nesting OFF on input line 6385.
-Package hyperref Info: Hyper index ON on input line 6388.
-Package hyperref Info: backreferencing OFF on input line 6395.
-Package hyperref Info: Link coloring OFF on input line 6400.
-Package hyperref Info: Link coloring with OCG OFF on input line 6405.
-Package hyperref Info: PDF/A mode OFF on input line 6410.
-LaTeX Info: Redefining \ref on input line 6450.
-LaTeX Info: Redefining \pageref on input line 6454.
+Package hyperref Info: Hyper figures OFF on input line 6423.
+Package hyperref Info: Link nesting OFF on input line 6428.
+Package hyperref Info: Hyper index ON on input line 6431.
+Package hyperref Info: backreferencing OFF on input line 6438.
+Package hyperref Info: Link coloring OFF on input line 6443.
+Package hyperref Info: Link coloring with OCG OFF on input line 6448.
+Package hyperref Info: PDF/A mode OFF on input line 6453.
+LaTeX Info: Redefining \ref on input line 6493.
+LaTeX Info: Redefining \pageref on input line 6497.
 \Hy@abspage=\count113
 \c@Item=\count114
 \c@Hfootnote=\count115
@@ -332,7 +329,7 @@ LaTeX Info: Redefining \pageref on input line 6454.
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hpdftex.def"
-File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
+File: hpdftex.def 2019/09/28 v7.00a Hyperref driver for pdfTeX
 \Fld@listcount=\count116
 \c@bookmark@seq@number=\count117
 
@@ -344,7 +341,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip64
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
-Package: amsmath 2018/12/01 v2.17b AMS math features
+Package: amsmath 2019/04/01 v2.17c AMS math features
 \@mathmargin=\skip65
 
 For additional information on amsmath, use the `?' option.
@@ -364,20 +361,20 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count118
-LaTeX Info: Redefining \frac on input line 223.
+LaTeX Info: Redefining \frac on input line 227.
 \uproot@=\count119
 \leftroot@=\count120
-LaTeX Info: Redefining \overline on input line 385.
+LaTeX Info: Redefining \overline on input line 389.
 \classnum@=\count121
 \DOTSCASE@=\count122
-LaTeX Info: Redefining \ldots on input line 482.
-LaTeX Info: Redefining \dots on input line 485.
-LaTeX Info: Redefining \cdots on input line 606.
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
 \Mathstrutbox@=\box31
 \strutbox@=\box32
 \big@size=\dimen164
-LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \macc@depth=\count123
 \c@MaxMatrixCols=\count124
 \dotsspace@=\muskip11
@@ -398,8 +395,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
 \multlinegap=\skip66
 \multlinetaggap=\skip67
 \mathdisplay@stack=\toks24
-LaTeX Info: Redefining \[ on input line 2844.
-LaTeX Info: Redefining \] on input line 2845.
+LaTeX Info: Redefining \[ on input line 2855.
+LaTeX Info: Redefining \] on input line 2856.
 )
 (C:\Users\Fra\AppData\Roaming\MiKTeX\2.9\tex/latex/sidecap\sidecap.sty
 Package: sidecap 2003/06/06 v1.6f SideCap Package (RN/HjG)
@@ -418,7 +415,7 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2019/07/20 v1.3b Standard LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
@@ -426,7 +423,7 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 105.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
@@ -437,31 +434,33 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 (article_2.aux)
 \openout1 = `article_2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Try loading font information for T1+pplx on input line 93.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Trying to load font information for T1+pplx on input line 9
+2.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\t1pplx.fd"
 File: t1pplx.fd 2004/09/06 font definitions for T1/pplx.
 )
-LaTeX Info: Redefining \microtypecontext on input line 93.
+LaTeX Info: Redefining \microtypecontext on input line 92.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
+LaTeX Info: Redefining \showhyphens on input line 92.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -509,26 +508,26 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: sidecap package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring OFF on input line 93.
+Package hyperref Info: Link coloring OFF on input line 92.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
-Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
 ("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count131
 )
-LaTeX Info: Redefining \ref on input line 93.
-LaTeX Info: Redefining \pageref on input line 93.
-LaTeX Info: Redefining \nameref on input line 93.
+LaTeX Info: Redefining \ref on input line 92.
+LaTeX Info: Redefining \pageref on input line 92.
+LaTeX Info: Redefining \nameref on input line 92.
 
 (article_2.out) (article_2.out)
 \@outlinefile=\write3
 \openout3 = `article_2.out'.
 
 
-(C:\Users\Fra\AppData\Roaming\MiKTeX\2.9\tex/latex/ms\ragged2e.sty
-Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+(C:\Users\Fra\AppData\Roaming\MiKTeX\2.9\tex/latex/ragged2e\ragged2e.sty
+Package: ragged2e 2019/07/28 v2.2 ragged2e Package (MS)
 
 (C:\Users\Fra\AppData\Roaming\MiKTeX\2.9\tex/latex/ms\everysel.sty
 Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
@@ -551,7 +550,7 @@ LaTeX Info: Redefining \selectfont on input line 126.
 \RaggedRightParindent=\skip80
 \JustifyingParindent=\skip81
 )
-(C:\Users\Fra\AppData\Roaming\MiKTeX\2.9\tex/context/base\supp-pdf.mkii
+(C:\Users\Fra\AppData\Roaming\MiKTeX\2.9\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count132
 \scratchdimen=\dimen177
@@ -578,33 +577,33 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 97.
-LaTeX Font Info:    Try loading font information for OT1+pplx on input line 97.
-
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 96.
+LaTeX Font Info:    Trying to load font information for OT1+pplx on input line 
+96.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ot1pplx.fd"
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 97.
-
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
+96.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\omlzplm.fd"
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 97.
-
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
+96.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\omszplm.fd"
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 97.
-
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
+96.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\omxzplm.fd"
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 97.
-
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
+96.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ot1zplm.fd"
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
@@ -617,56 +616,134 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplx/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 97.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 96.
 
-Underfull \hbox (badness 2970) in paragraph at lines 127--129
+Underfull \hbox (badness 2970) in paragraph at lines 126--128
 \T1/pplx/m/n/10 (+20) Il di-men-sion-a-mento della patch richiede
  []
 
-<images/MICROSTRIPlinefield.jpg, id=16, 564.17226pt x 327.15775pt>
+<images/MICROSTRIPlinefield.jpg, id=12, 564.17226pt x 327.15775pt>
 File: images/MICROSTRIPlinefield.jpg Graphic file (type jpg)
 <use images/MICROSTRIPlinefield.jpg>
-Package pdftex.def Info: images/MICROSTRIPlinefield.jpg  used on input line 137
+Package pdftex.def Info: images/MICROSTRIPlinefield.jpg  used on input line 136
 .
 (pdftex.def)             Requested size: 205.0023pt x 118.87993pt.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <9> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 138.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 137.
 [1{C:/Users/Fra/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 199--203
+Underfull \hbox (badness 10000) in paragraph at lines 187--191
 \T1/pplx/m/n/10 (+20) Il metodo più sem-plice per stu-di-are
  []
 
 
-Underfull \hbox (badness 4048) in paragraph at lines 199--203
+Underfull \hbox (badness 4048) in paragraph at lines 187--191
 \T1/pplx/m/n/10 (+20) l'impedenza dell'antenna a micro-striscia
  []
 
 
-Underfull \hbox (badness 1748) in paragraph at lines 244--248
+Overfull \hbox (33.40808pt too wide) detected at line 217
+\OML/zplm/m/it/10 G[] \OT1/zplm/m/n/10 = [] [][] [][][][]\OML/zplm/m/it/10 J[]\
+OT1/zplm/m/n/10 (\OML/zplm/m/it/10 k[]Lsin\OT1/zplm/m/n/10 )\OML/zplm/m/it/10 
+sin[]d
+ []
+
+[2 <./images/MICROSTRIPlinefield.jpg>]
+<images/A_Cad.jpg, id=51, 313.4109pt x 176.3388pt>
+File: images/A_Cad.jpg Graphic file (type jpg)
+<use images/A_Cad.jpg>
+Package pdftex.def Info: images/A_Cad.jpg  used on input line 244.
+(pdftex.def)             Requested size: 205.0023pt x 115.34265pt.
+
+Underfull \hbox (badness 1888) in paragraph at lines 248--251
+\T1/pplx/m/n/10 (+20) ra-di-anti, au-men-tando i tempi di cal-colo.
+ []
+
+
+Underfull \hbox (badness 3895) in paragraph at lines 248--251
+\T1/pplx/m/n/10 (+20) pos-si-bile cal-co-lare un'effettiva ra-di-azione
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--251
+
+ []
+
+
+Underfull \hbox (badness 1478) in paragraph at lines 248--251
+\T1/pplx/m/n/10 (+20) Simulato il mod-ello, i primi risul-tati da
+ []
+
+<images/A_impedenza.png, id=54, 779.16093pt x 603.0028pt>
+File: images/A_impedenza.png Graphic file (type png)
+<use images/A_impedenza.png>
+Package pdftex.def Info: images/A_impedenza.png  used on input line 253.
+(pdftex.def)             Requested size: 205.0023pt x 158.65404pt.
+<images/A_S11.png, id=55, 779.16093pt x 603.0028pt>
+File: images/A_S11.png Graphic file (type png)
+<use images/A_S11.png>
+Package pdftex.def Info: images/A_S11.png  used on input line 258.
+(pdftex.def)             Requested size: 205.0023pt x 158.65404pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/A_Smith.png, id=57, 779.16093pt x 603.0028pt>
+File: images/A_Smith.png Graphic file (type png)
+<use images/A_Smith.png>
+Package pdftex.def Info: images/A_Smith.png  used on input line 268.
+(pdftex.def)             Requested size: 205.0023pt x 158.65404pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/A_orizzontale.png, id=58, 779.16093pt x 603.0028pt>
+File: images/A_orizzontale.png Graphic file (type png)
+<use images/A_orizzontale.png>
+Package pdftex.def Info: images/A_orizzontale.png  used on input line 274.
+(pdftex.def)             Requested size: 205.0023pt x 158.65404pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/A_verticale.png, id=59, 779.16093pt x 603.0028pt>
+File: images/A_verticale.png Graphic file (type png)
+<use images/A_verticale.png>
+Package pdftex.def Info: images/A_verticale.png  used on input line 280.
+(pdftex.def)             Requested size: 205.0023pt x 158.65404pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 1748) in paragraph at lines 297--301
 []\T1/pplx/m/n/10 (+20) Figueredo, A. J.
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 253.
-[2 <./images/MICROSTRIPlinefield.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 253.
+
+Underfull \vbox (badness 8170) has occurred while \output is active []
+
+ [3 <./images/A_Cad.jpg> <./images/A_impedenza.png>]
+
+LaTeX Warning: Text page 4 contains only floats.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 306.
+[4 <./images/A_S11.png> <./images/A_Smith.png> <./images/A_orizzontale.png> <./
+images/A_verticale.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 306.
  (article_2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 253.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 253.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 306.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 306.
 Package rerunfilecheck Info: File `article_2.out' has not changed.
-(rerunfilecheck)             Checksum: 57F939238CDA0D84B73BC090C08C8384;174.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 253.
+(rerunfilecheck)             Checksum: A036D7753BCE2972EC22E7CA9C5038E2;98.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 306.
  ) 
 Here is how much of TeX's memory you used:
- 11108 strings out of 492946
- 168440 string characters out of 3135533
- 309016 words of memory out of 3000000
- 14647 multiletter control sequences out of 15000+200000
- 52938 words of font info for 181 fonts, out of 3000000 for 9000
+ 11399 strings out of 492452
+ 172278 string characters out of 3129814
+ 318431 words of memory out of 3000000
+ 15338 multiletter control sequences out of 15000+200000
+ 59749 words of font info for 224 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,14n,43p,444b,374s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,14n,45p,444b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
@@ -676,9 +753,9 @@ s/type1/public/mathpazo/fplmri.pfb><C:/Users/Fra/AppData/Roaming/MiKTeX/2.9/fon
 ts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/pa
 latino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on article_2.pdf (2 pages, 194334 bytes).
+Output written on article_2.pdf (4 pages, 613136 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 23 named destinations out of 1000 (max. 500000)
- 45598 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 113 PDF objects out of 1000 (max. 8388607)
+ 31 named destinations out of 1000 (max. 500000)
+ 46644 words of extra memory for PDF output out of 51595 (max. 10000000)
 

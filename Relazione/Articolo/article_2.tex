@@ -87,7 +87,6 @@
 \noindent Design of a patch antenna linear array for IEEE 802.11 wireless based application. % Dummy abstract text - replace \blindtext with your abstract text
 \end{abstract}
 }
-
 %----------------------------------------------------------------------------------------
 
 \begin{document}
@@ -170,13 +169,9 @@ mentre combinando la \eqref{eq:freq} e la \eqref{eq:L} si può ricavare la lungh
 L=\frac{1}{2f_{r}\sqrt{\mu_{0}\epsilon_{0}}\sqrt{\epsilon_{reff}}}-2\Delta L
 \end{equation}
 
-
-
-
 Note la frequenza centrale $f_{r}= 2.45GHz$, e considerato il  
 substrato di spessore h di 1.6 mm ed $\epsilon_{r}=4.4$,
 si ricavano i valori
-
 
 \begin{center}
 \begin{tabular}{ |c|c| } 
@@ -188,14 +183,7 @@ si ricavano i valori
 \end{tabular}
 \end{center}
 
-
-
-
-
-
-
-\subsection{Adattamento di impedenza}
-
+\subsection*{Adattamento di impedenza}
 Il metodo più semplice per studiare l'impedenza dell'antenna a micro-striscia è quello di analizzare il suo modello come linea di trasmissione.
 L'antenna viene vista quindi come una linea di trasmissione i cui estremi (che corrispondono agli "slot" radianti ai bordi della patch) sono modellati come  due paralleli RC.
 I due slot sono identici con ammettenza $Y_{1}=G_{1}+jB_{1}$. Inoltre l'ammettenza totale è puramente reale, data dal parallelo delle due conduttanze  $Y_{in}=Y_{1}+Y_{2}=2G_{1}$ (per via di una "trasformazione di ammettenza"vedi balanis).
@@ -225,13 +213,74 @@ R_{in}=Z_{in}= \frac{1}{Y_{in}}=\frac{1}{2G_{1}+2G_{12}}
 \end{equation}
 Il valore di conduttanza mutua si approssima con 
 \begin{equation}
-G_{12}=int=Z_{in}= \frac{1}{Y_{in}}=\frac{1}{2G_{1}}
+G_{12}= \frac{1}{120\pi^2}\int_0^\pi \Big[\dfrac{sin (\big( \frac{k_{0}W}{2} cos\theta\big)}{cos\theta}\Big]^2 J_{0}(k_{0}Lsin\theta)sin^3\theta d\theta
 \end{equation}
 
+Si ottiene quindi l'impedenza in ingresso $R_{in}= 321.42$ per via numerica.
+Scegliendo di alimentare la patch sul bordo (edge feed), con una linea a microstriscia, sarà necessario raggiungere il punto di alimentazione con una linea adattata a $R_{in}$.
+Si può altrimenti scegliere di cambiare il punto di alimentazione spostandosi verso il centro della patch (inset feed), cercando il valore di impedenza più adatto.
+Si è scelto come primo tentativo per alimentare l'elemento singolo di realizzare un inset feed, calcolando numericamente il valore $y_{0}$ in cui l'impedenza $R_{in}(y=y_{0})= 50 \; \Omega$, ovvero un carico adattato alla linea di alimentazione.
+Sapendo che 
+
+\begin{align*}
+R_{in}(y=y_{0})=\frac{1}{2(G_{1}+G_{12})}cos^2\Big( \frac{\pi}{L}y_{0}\Big)=\\
+=R_{in}(y=0)cos^2\Big(\frac{\pi}{L}y_{0}\Big)
+\end{align*}
+
+Risolvendo per $y_{0}$ e imponendo $R_{in}(y=y_{0})= 50 \Omega$ si ha 
+\begin{align*}
+ y_{0}= \frac {L}{\pi}\arccos\sqrt{\frac{50}{R_{in}(y=0)}}= \\=0.0107 \; m
+\end{align*}
+
+Si effettua quindi uno scavo nella patch fino al punto $y_{0}$ e si connette la linea a $50\; \Omega$.\newline
+Per ottenere un a microstriscia a $50\; \Omega$ si impone una larghezza $W_{50}= 0.003 \; m$
+
+
+
+\subsection*{Simulazione su FEKO Student}
+La geometria presentata è stata realizzata su FEKO Student, e il modello ottenuto è riportato in figura \ref{fig:A_Cad}.
+
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{A_Cad.jpg}
+  \caption{Modello CADFEKO dell'antenna con inset feed}
+  \label{fig:A_Cad}
+\end{figure}
+Il modello è stato realizzato su un piano di massa infinito: questo permette di ridurre i tempi di simulazione. In particolare, i bordi di un substrato reale (con dimensioni finite) si comporterebbero anch'essi come elementi radianti, aumentando i tempi  di calcolo.
+Con un piano infinito, questi effetti ai bordi vengono omessi. Di contro, non essendo possibile calcolare un'effettiva radiazione da parte del substrato, non si potranno fare osservazioni attendibili sui valori di potenza irradiata rapportata alla potenza dispersa nel mezzo dielettrico.\newline \newline
+Simulato il modello, i primi risultati da discutere sono quelli riguardanti l'impedenza vista dal carico (Figura\ref{fig:A_impedenza}) e il coefficiente di riflessione $S_{11}$(Figura  \ref{fig:A_S11}).
+
+ \begin{figure}[h!]
+  \includegraphics[width=\linewidth]{A_impedenza.png}
+  \caption{Impedenza ($Re +Im$) vista dal carico, in funzione della frequenza[GHz]}
+  \label{fig:A_impedenza}
+\end{figure}
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{A_S11.png}
+  \caption{$S_{11} $[dB] in funzione della frequenza [GHz] }
+  \label{fig:A_S11}
+\end{figure}
+Il grafico di $S_{11}$ mostra il picco a minima riflessione centrato in  2.466 GHz con una banda a -3dB di 70MHz. La banda frazionaria risulta 2.8\% che è un valore tipico per questa
+antenna.\newline Il risultato non è però ottimale: di fatto si sta cercando l'adattamento di impedenza con una frequenza di centro banda a 2.450 GHz.Questo indica che il carico non è abbastanza adattato alla linea di alimentazione.\newline
+In Figura \ref{fig:A_impedenza} sono evidenziati i valori di impedenza visti dal generatore a 2.450 GHz e a 2.466 GHz. Per il punto di alimentazione scelto il carico non è ancora abbastanza adattato, e risulta $111 \;\Omega$.
 %------------------------------------------------
 
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{A_Smith.png}
+  \caption{$S_{11} $ sulla carta di Smith,in funzione della frequenza}
+  \label{fig:A_Smith}
+\end{figure}
 
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{A_orizzontale.png}
+  \caption{Ddr Guadagno [dB], piano orizzontale}
+  \label{fig:A_orizzontale}
+\end{figure}
 
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{A_verticale.png}
+  \caption{Ddr Guadagno [dB] e apertura a -3dB, piano verticale}
+  \label{fig:A_verticale}
+\end{figure}
 
 %------------------------------------------------
 

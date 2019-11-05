@@ -118,7 +118,7 @@ L_transf=lambdag/4
 
 % invertendo la Balanis (14-20a), imponendo l'impedenza R(y0)=50 ohm, ricavo 
 %
- y0= L/pi*acos(sqrt(50/Rin0))
+ y0= L/pi*acos(sqrt(50/111))
  
 %% PLOT TABLE
 % 
