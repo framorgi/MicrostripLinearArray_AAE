@@ -97,7 +97,7 @@ Wm=0.00303;%( per avere una microstriscia a 50 ohm)
 % CALCOLO DEL TRASFORMATORE LAMBDA/4
 %
 %Ricavo l'impedenza Z0 del trasformatore 
-Z0=sqrt(50*Rin0)
+Z0=sqrt(50*111)
 
 %per ricavare la lunghezza d'onda lungo la microstriscia calcolo la
 %relativa Eeff, tenendo conto che non sono più nella patch ma nella niea di
@@ -130,7 +130,7 @@ L_transf=lambdag/4
  uit1.Position = [20 130 680 60];
  uit2=uitable(fig,'Data',[Rin0 y0 ],'ColumnName',{'Rin0'; 'y0 a  Rin=50 ohm'});
   uit2.Position = [20 70 680 60];
-   uit2=uitable(fig,'Data',[Z0 L_transf],'ColumnName',{'Z0 del trasformatore'; 'L del trasformatore( lambdag/4)'});
+   uit2=uitable(fig,'Data',[Z0 L_transf Ereff_mstrip],'ColumnName',{'Z0 del trasformatore'; 'L del trasformatore( lambdag/4)';'Ereff microstriscia'});
   uit2.Position = [20 10 680 60];
 
 
