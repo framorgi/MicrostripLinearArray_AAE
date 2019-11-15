@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.24)  6 NOV 2019 16:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.24)  15 NOV 2019 13:11
 entering extended mode
 **./article_2.tex
 (article_2.tex
@@ -434,11 +434,7 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen175
 \Gin@req@width=\dimen176
 )
-(article_2.aux
-
-LaTeX Warning: Label `Figueredo:2009dg' multiply defined.
-
-)
+(article_2.aux)
 \openout1 = `article_2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
@@ -719,46 +715,63 @@ Package pdftex.def Info: images/A_verticale.png  used on input line 279.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 1748) in paragraph at lines 296--300
-[]\T1/pplx/m/n/10 (+20) Figueredo, A. J.
- []
-
-
 Underfull \vbox (badness 8170) has occurred while \output is active []
 
  [3 <./images/A_Cad.jpg> <./images/A_impedenza.png>]
 
 LaTeX Warning: Text page 4 contains only floats.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 312.
-[4pdfTeX warning (ext4): destination with the same identifier (name{cite.Figuer
-edo:2009dg}) has been already used, duplicate ignored
+<images/A1_Cad.png, id=70, 799.48688pt x 322.95656pt>
+File: images/A1_Cad.png Graphic file (type png)
+<use images/A1_Cad.png>
+Package pdftex.def Info: images/A1_Cad.png  used on input line 292.
+(pdftex.def)             Requested size: 205.0023pt x 82.80865pt.
+<images/A1_S11.png, id=72, 618.05907pt x 390.70969pt>
+File: images/A1_S11.png Graphic file (type png)
+<use images/A1_S11.png>
+Package pdftex.def Info: images/A1_S11.png  used on input line 297.
+(pdftex.def)             Requested size: 205.0023pt x 129.59038pt.
+<images/A1_impedenza.png, id=74, 618.05907pt x 390.70969pt>
+File: images/A1_impedenza.png Graphic file (type png)
+<use images/A1_impedenza.png>
+Package pdftex.def Info: images/A1_impedenza.png  used on input line 303.
+(pdftex.def)             Requested size: 205.0023pt x 129.59038pt.
+<images/A1_Smith.png, id=75, 618.05907pt x 390.70969pt>
+File: images/A1_Smith.png Graphic file (type png)
+<use images/A1_Smith.png>
+Package pdftex.def Info: images/A1_Smith.png  used on input line 308.
+(pdftex.def)             Requested size: 205.0023pt x 129.59038pt.
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.312 \end{document}
-                     <./images/A_S11.png> <./images/A_Smith.png> <./images/A_or
-izzontale.png> <./images/A_verticale.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 312.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4 <./images/A_S11.png> <./images/A_Smith.png> <./images/A_orizzontale.png> <./
+images/A_verticale.png> <./images/A1_Cad.png>]
+
+LaTeX Warning: Empty `thebibliography' environment on input line 326.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 330.
+[5 <./images/A1_S11.png (PNG copy)> <./images/A1_impedenza.png (PNG copy)> <./i
+mages/A1_Smith.png (PNG copy)>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 330.
  (article_2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 312.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 312.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 330.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 330.
 Package rerunfilecheck Info: File `article_2.out' has not changed.
 (rerunfilecheck)             Checksum: BF91C745555035C31741CEEDEEE38474;100.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 312.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 330.
  ) 
 Here is how much of TeX's memory you used:
- 11221 strings out of 492946
- 170158 string characters out of 3135533
- 311276 words of memory out of 3000000
- 14686 multiletter control sequences out of 15000+200000
- 60195 words of font info for 230 fonts, out of 3000000 for 9000
+ 11238 strings out of 492946
+ 170530 string characters out of 3135533
+ 310445 words of memory out of 3000000
+ 14696 multiletter control sequences out of 15000+200000
+ 60230 words of font info for 232 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,14n,43p,444b,452s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,14n,43p,444b,386s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
@@ -768,9 +781,9 @@ s/type1/public/mathpazo/fplmri.pfb><C:/Users/Fra/AppData/Roaming/MiKTeX/2.9/fon
 ts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/pa
 latino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on article_2.pdf (4 pages, 613328 bytes).
+Output written on article_2.pdf (5 pages, 778996 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 500000)
- 46644 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 131 PDF objects out of 1000 (max. 8388607)
+ 36 named destinations out of 1000 (max. 500000)
+ 44616 words of extra memory for PDF output out of 51595 (max. 10000000)
 

@@ -101,13 +101,13 @@
 
 
 Si vuole progettare un array lineare di 4 antenne a micro-striscia (patch) destinata ad applicazioni wireless con standard IEEE 802.11.
-L'antenna dovrà operare nella banda 2400 – 2483.5 MHz che comprende i tipici 12 canali Wi-fi.
-In base ai requisiti appena riportati, ricaviamo le seguenti specifiche per l'antenna
+L'antenna dovrà operare nella banda 2400 – 2500 MHz che comprende i tipici 12 canali Wi-fi.
+Dai requisiti appena riportati, ricaviamo le seguenti specifiche per l'antenna
 
 \begin{enumerate}[noitemsep] % [noitemsep] removes whitespace between the items for a compact look
-\item Frequenza centrale
-\item Banda: 
-\item Guadagno
+\item Frequenza centrale: 2.45 GHz
+\item Banda: 100 MHz
+\item Guadagno: 1dB 
 \end{enumerate}
  e per l'array
  \begin{enumerate}[noitemsep] % [noitemsep] removes whitespace between the items for a compact look
@@ -281,6 +281,35 @@ In Figura \ref{fig:A_impedenza} sono evidenziati i valori di impedenza visti dal
   \label{fig:A_verticale}
 \end{figure}
 
+\subsection*{Approccio differente: Trasformatore in $\frac{\lambda}{4}$ ed Inset Feed }
+Per tentare di migliorare l'adattamento di impedenza ottenuto si è realizzato un secondo modello con le stesse caratteristiche del primo, dove però la linea di alimentazione a $50\Omega$ è stata combinata con un trasformatore in $\frac{\lambda}{4}$.
+In questo modo si ottiene l'adattamento di impedenza con il valore $R_{in}(y=y_{0})$ visto nel punto di inserzione alla frequenza desiderata. \newline Osservando il grafico in Figura \ref{fig:A_impedenza}, il valore reale dell'impedenza raggiunge i $111 \Omega$ a 2.45 GHz. Si realizza quindi una sezione  in $\frac{\lambda}{4}$ di impedenza:
+\begin{equation}
+Z_{0}=\sqrt{Z_{C}R_{in}}=74.5 \Omega
+\end{equation}
+In Figura \ref{fig:A1_Cad} è riportato il modello simulato mentre in Figura \ref{fig:A1_S11} è riportato il grafico di Return Loss.
+ \begin{figure}[h!]
+  \includegraphics[width=\linewidth]{A1_Cad.png}
+  \caption{Modello CADFEKO dell'antenna con inset feed combinato a trasformatore $\frac{\lambda}{4}$}
+  \label{fig:A1_Cad}
+\end{figure}
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{A1_S11.png}
+  \caption{$S_{11} $[dB] in funzione della frequenza [GHz] }
+  \label{fig:A1_S11}
+\end{figure}
+I valori di impedenza ottenuti si avvicinano ad un miglior adattamento di impedenza (Figura \ref{fig:A1_impedenza}), ma il picco di risonanza si è spostato di poco  e rimane intorno a 2.457 GHz
+ \begin{figure}[h!]
+  \includegraphics[width=\linewidth]{A1_impedenza.png}
+  \caption{Impedenza ($Re +Im$) vista dal carico, in funzione della frequenza[GHz]}
+  \label{fig:A1_impedenza}
+\end{figure}
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{A1_Smith.png}
+  \caption{$S_{11} $ sulla carta di Smith,in funzione della frequenza }
+  \label{fig:A1_Smith}
+\end{figure}
+
 %------------------------------------------------
 
 
@@ -292,18 +321,7 @@ In Figura \ref{fig:A_impedenza} sono evidenziati i valori di impedenza visti dal
 
 \begin{thebibliography}{99} % Bibliography - this is intentionally simple in this template
 
-\bibitem[Figueredo and Wolf, 2009]{Figueredo:2009dg}
-Figueredo, A.~J. and Wolf, P. S.~A. (2009).
-\newblock Assortative pairing and life history strategy - a cross-cultural
-  study.
-\newblock {\em Human Nature}, 20:317--330.
- \bibitem[Figueredo and Wolf, 2009]{Figueredo:2009dg}
- \bibitem[Geek, 2012]{Geek2012}
 
-\bibitem{Rice07}
-John A. Rice, Mathematical Statistics and Data Analysis Third Edition, Duxbury Advanced Series (2007)
-\bibitem{Rencher00}
-Alvin C. Rencher, Linear Models in Statistic; Wiley Series in Probability and Statistics (2000)
 
 \end{thebibliography}
 
