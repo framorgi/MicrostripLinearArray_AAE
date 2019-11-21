@@ -30,9 +30,11 @@ h=0.0016; %m
 %Calcolo della larghezza W
 W=(v0/(2*f0))*sqrt(2/(Er+1))
 
+%Valore W corretto
+W=0.04
 %Calcolo Ereff dalla Balanis (14-1)3
 Ereff= (Er+1)/2+((Er-1)/2)*((1+12*h/W)^(-1/2))
-
+lambdag_patch= lambda0/sqrt(Ereff)
 %Calcolo lunghezza  L
 %Se considero gli effetti ai bordi, Leff= L+2deltaL (fringing)
 %Dove deltaL è approssimata dalla Balanis (14-2)ed è funzione del rapporto fra
@@ -44,7 +46,8 @@ deltaL=h*0.412*((Ereff+0.3)*(W/h+0.264))/((Ereff-0.258)*(W/h+0.8));
 
 L=(1/(2*f0*sqrt(Ereff)*sqrt(mu0*e0)))-2*deltaL
 
-
+%Valore L corretto
+L=0.0288
 
 %% Z-Match
 %% Lambda/4 Transformer
@@ -57,9 +60,6 @@ L=(1/(2*f0*sqrt(Ereff)*sqrt(mu0*e0)))-2*deltaL
 %CALCOLO DI Rin0 (Resistenza di ingresso al bordo)
 %della patch usando la Balanis 14-20
 
-%slotrate è il rapporto fra W e lamba0--> serve solo per scegliere quale
-%funzione a tratti scegliere
-slotrate=W/lambda0
 
 
 
@@ -90,25 +90,38 @@ Rin0= 1/(2*(G1+G12))
 %CALCOLO DELLA MICROSTRISCIA
 %Definisco una  linea di microstriscia di dimensione Wm tale che sia a Zc=
 %50 ohm
+%https://www.emtalk.com/mscalc.php?er=4.4&h=1.6&h_units_list=hmm&f=2.45&Zo=74.4983&EL=0&Operation=Synthesize&Wa=1.4527986584&W_units_list=Wmm&La=0.172456338325&L_units_list=Lmm
 
-Wm=0.00303;%( per avere una microstriscia a 50 ohm)
+Wm=0.00305;%( per avere una microstriscia a 50 ohm)
 
-
-% CALCOLO DEL TRASFORMATORE LAMBDA/4
-%
-%Ricavo l'impedenza Z0 del trasformatore 
-Z0=sqrt(50*111)
-
-%per ricavare la lunghezza d'onda lungo la microstriscia calcolo la
-%relativa Eeff, tenendo conto che non sono più nella patch ma nella niea di
-%microstriscia, quindi la larghezza è Wm
 Ereff_mstrip= (Er+1)/2+((Er-1)/2)*((1+12*h/Wm)^(-1/2))
-lambdag= lambda0/sqrt(Ereff_mstrip)
-%il trasformatore ha L pari a lambdag/4
-L_transf=lambdag/4
 
-%NOTABENE   Wm è la larghezza della microstrip a 50 ohm, mentre la W del
-%trasformatore la calcolo con un tool imponendo Z0
+lambdag_mstrip= lambda0/sqrt(Ereff_mstrip)
+
+%CALCOLO DEL TRASFORMATORE LAMBDA/4
+%Za valore di impedenza da adattare
+Za=111;
+%Ricavo l'impedenza Zt del trasformatore 
+Zt=sqrt(50*Za)
+W_transf= 0.0013 %( per avere un trasformatore  a Zt ohm)
+Ereff_transf= (Er+1)/2+((Er-1)/2)*((1+12*h/W_transf)^(-1/2))
+lambdag_transf= lambda0/sqrt(Ereff_transf)
+%il trasformatore ha L pari a lambdag/4
+L_transf=lambdag_transf/4
+
+
+%%TRASFORMATORE 2 LAMBDA/4
+%CALCOLO DEL TRASFORMATORE LAMBDA/4
+%Za valore di impedenza da adattare
+Za=111;
+%Ricavo l'impedenza Zt del trasformatore 
+Zt2=sqrt(50*100)
+W_transf2= 0.00165 %( per avere un trasformatore  a Zt ohm)
+Ereff_transf2= (Er+1)/2+((Er-1)/2)*((1+12*h/W_transf)^(-1/2))
+lambdag_transf2= lambda0/sqrt(Ereff_transf)
+%il trasformatore ha L pari a lambdag/4
+L_transf2=lambdag_transf2/4
+
 
 %% Inset feed
 %  Considero una linea feed di microstriscia  dimensionata a 50 ohm
@@ -118,34 +131,44 @@ L_transf=lambdag/4
 
 % invertendo la Balanis (14-20a), imponendo l'impedenza R(y0)=50 ohm, ricavo 
 %
- y0= L/pi*acos(sqrt(50/111))
- 
+y0= L/pi*acos(sqrt(50/Rin0))
+
 %% PLOT TABLE
 % 
 
 %  Patch = table(W,L,h,f0,Er,Ereff);
  fig=uifigure('Name','Design della Patch');
- fig.Position = [500 500 740 210];
- uit1=uitable(fig,'Data',[W L h f0 Er Ereff],'ColumnName',{'W'; 'L'; 'h'; 'f0'; 'Er'; 'Ereff'});
- uit1.Position = [20 130 680 60];
- uit2=uitable(fig,'Data',[Rin0 y0 ],'ColumnName',{'Rin0'; 'y0 a  Rin=50 ohm'});
-  uit2.Position = [20 70 680 60];
-   uit2=uitable(fig,'Data',[Z0 L_transf Ereff_mstrip],'ColumnName',{'Z0 del trasformatore'; 'L del trasformatore( lambdag/4)';'Ereff microstriscia'});
-  uit2.Position = [20 10 680 60];
+ fig.Position = [500 500 740 240];
+ uit1=uitable(fig,'Data',[W L h f0 lambdag_patch Er Ereff],'ColumnName',{'W'; 'L'; 'h'; 'f0';'lambdag'; 'Er'; 'Ereff'});
+ uit1.Position = [20 160 680 40];
+ uit2=uitable(fig,'Data',[Rin0 y0 ],'ColumnName',{'Rin0'; 'Inset y0 a  Rin=50 ohm'});
+ uit2.Position = [20 120 680 40];
+ uit3=uitable(fig,'Data',[ Ereff_mstrip Wm lambdag_mstrip],'ColumnName',{'Ereff microstriscia';'W microstriscia'; 'lambdag microstriscia'});
+ uit3.Position = [20 80 680 40];
+ uit4=uitable(fig,'Data',[Zt lambdag_transf W_transf L_transf Ereff_transf],'ColumnName',{'Zt del trasformatore';'lambdag trasformatore';'W trasformatore ';'L del trasformatore( lambdag/4)';'Ereff trasf'});
+ uit4.Position = [20 40 680 40];
 
-
+fig=uifigure('Name','Design del FEED');
+ fig.Position = [500 500 740 240];
+  uit5=uitable(fig,'Data',[Zt2 lambdag_transf2 W_transf2 L_transf2 Ereff_transf2],'ColumnName',{'Zt del trasformatore';'lambdag trasformatore';'W trasformatore ';'L del trasformatore( lambdag/4)';'Ereff trasf'});
+ uit5.Position = [20 40 680 40];
 %% ARRAY
-% 
+clear all;
+close all;
+clc;
 %
 % Coded by Chan Sokthai (sokthai@msn.com) -  Department of Engineering, University of Fukui
+f0= 2.45e9
+c=3*10^8;
+lambda0= c/f0
 
 % element numbers
-N = 25;
+N =4;
 % element spacing
-d = 5;
+d = 0.5;
 % theta zero direction
 % 90 degree for braodside, 0 degree for endfire.
-theta_zero = 0;
+theta_zero = 90;
 An = 1;
 j = sqrt(-1);
 AF = zeros(1,360);
@@ -162,7 +185,7 @@ for theta=1:360
     
 end
 % plot the array factor
-% figure;
-% polar(deg2rad,AF);
+ figure;
+ polar(deg2rad,AF);
 
 %%

@@ -59,7 +59,7 @@
 \usepackage{hyperref} % For hyperlinks in the PDF
 \usepackage{amsmath}
 \usepackage[rightcaption]{sidecap}
- 
+ \usepackage{gensymb}
 \usepackage{graphicx} %package to manage images
 \graphicspath{{images/} }
 %----------------------------------------------------------------------------------------
@@ -100,8 +100,8 @@
 \section{Introduction}
 
 
-Si vuole progettare un array lineare di 4 antenne a micro-striscia (patch) destinata ad applicazioni wireless con standard IEEE 802.11.
-L'antenna dovrà operare nella banda 2400 – 2500 MHz che comprende i tipici 12 canali Wi-fi.
+Si vuole progettare un array lineare Broadside di 4 antenne a micro-striscia (patch), destinata ad applicazioni Wireless IEEE 802.11.
+L'antenna dovrà operare nella banda 2400 – 2500 MHz utilizzata nelle applicazioni Wi-Fi.
 Dai requisiti appena riportati, ricaviamo le seguenti specifiche per l'antenna
 
 \begin{enumerate}[noitemsep] % [noitemsep] removes whitespace between the items for a compact look
@@ -175,8 +175,8 @@ si ricavano i valori
 \begin{center}
 \begin{tabular}{ |c|c| } 
  \hline
- W & 35 \\ 
- L & 27.8 \\ 
+ W & 37.3 mm \\ 
+ L & 27.8 mm \\ 
  $\epsilon_{reff}$ & 4.01 \\
  \hline
 \end{tabular}
@@ -222,6 +222,7 @@ Si è scelto come primo tentativo per alimentare l'elemento singolo di realizzar
 Sapendo che 
 
 \begin{align*}
+\label{eq:Rin}
 R_{in}(y=y_{0})=\frac{1}{2(G_{1}+G_{12})}cos^2\Big( \frac{\pi}{L}y_{0}\Big)=\\
 =R_{in}(y=0)cos^2\Big(\frac{\pi}{L}y_{0}\Big)
 \end{align*}
@@ -281,24 +282,34 @@ In Figura \ref{fig:A_impedenza} sono evidenziati i valori di impedenza visti dal
   \label{fig:A_verticale}
 \end{figure}
 
-\subsection*{Approccio differente: Trasformatore in $\frac{\lambda}{4}$ ed Inset Feed }
-Per tentare di migliorare l'adattamento di impedenza ottenuto si è realizzato un secondo modello con le stesse caratteristiche del primo, dove però la linea di alimentazione a $50\Omega$ è stata combinata con un trasformatore in $\frac{\lambda}{4}$.
-In questo modo si ottiene l'adattamento di impedenza con il valore $R_{in}(y=y_{0})$ visto nel punto di inserzione alla frequenza desiderata. \newline Osservando il grafico in Figura \ref{fig:A_impedenza}, il valore reale dell'impedenza raggiunge i $111 \Omega$ a 2.45 GHz. Si realizza quindi una sezione  in $\frac{\lambda}{4}$ di impedenza:
-\begin{equation}
-Z_{0}=\sqrt{Z_{C}R_{in}}=74.5 \Omega
-\end{equation}
-In Figura \ref{fig:A1_Cad} è riportato il modello simulato mentre in Figura \ref{fig:A1_S11} è riportato il grafico di Return Loss.
+\subsection*{Trasformatore in $\frac{\lambda}{4}$ ed Inset Feed }
  \begin{figure}[h!]
   \includegraphics[width=\linewidth]{A1_Cad.png}
   \caption{Modello CADFEKO dell'antenna con inset feed combinato a trasformatore $\frac{\lambda}{4}$}
   \label{fig:A1_Cad}
 \end{figure}
+Per tentare di migliorare l'adattamento di impedenza ottenuto si è realizzato un secondo modello con le stesse caratteristiche del primo, dove però la linea di alimentazione a $50\Omega$ è stata combinata con un trasformatore in $\frac{\lambda}{4}$.
+In questo modo si vuole adattare l'alimentazione al carico visto sul punto di inserzione il cui valore era dato da \ref{eq:Rin}. \newline Osservando il grafico in Figura \ref{fig:A_impedenza}, il valore reale dell'impedenza raggiunge i $111 \Omega$ a 2.45 GHz. Si realizza quindi una sezione  in $\frac{\lambda}{4}$ di impedenza :
+\begin{equation}
+Z_{0}=\sqrt{Z_{C}R_{in}}=74.5 \Omega
+\end{equation}
+Durante le simulazioni sono state in oltre effettuati alcuni aggiustamenti alle dimensioni del modello  per ottenere un miglior risultato.Le variazioni sono riportate in tabella, comparati con i valori calcolati.
+\begin{center}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+ W & L & $\rightarrow W$ & $\rightarrow L$\\ 
+ 37.3 mm& 27.8 mm & 41 mm & 28.8 \\ 
+ \hline
+\end{tabular}
+\end{center}
+In Figura \ref{fig:A1_Cad} è riportata la geometria del modello simulato mentre in Figura \ref{fig:A1_S11} è riportato il grafico di Return Loss.
+
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{A1_S11.png}
   \caption{$S_{11} $[dB] in funzione della frequenza [GHz] }
   \label{fig:A1_S11}
 \end{figure}
-I valori di impedenza ottenuti si avvicinano ad un miglior adattamento di impedenza (Figura \ref{fig:A1_impedenza}), ma il picco di risonanza si è spostato di poco  e rimane intorno a 2.457 GHz
+Con queste modifiche si è ottenuto un miglior adattamento sul carico dell'antenna e quindi circa -10 dB ulteriori del return loss attorno alla frequenza centrale. (Figura \ref{fig:A1_impedenza}),
  \begin{figure}[h!]
   \includegraphics[width=\linewidth]{A1_impedenza.png}
   \caption{Impedenza ($Re +Im$) vista dal carico, in funzione della frequenza[GHz]}
@@ -309,6 +320,59 @@ I valori di impedenza ottenuti si avvicinano ad un miglior adattamento di impede
   \caption{$S_{11} $ sulla carta di Smith,in funzione della frequenza }
   \label{fig:A1_Smith}
 \end{figure}
+
+In seguito sono riportati i risultati relativi al guadagno dell'antenna e i diagrammi di radiazione.
+
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{A1_verticale.png}
+  \caption{Ddr Guadagno [dB] e apertura a -3dB, piano verticale}
+  \label{fig:A1_verticale}
+\end{figure}
+Il guadagno sul piano verticale raggiunge un massimo di 5.9 dBi, con un apertura a -3dB di circa 160.7$^\circ$
+Il diagramma di radiazione ottenuto è quello tipico di un'antenna patch rettangolare.
+Questo verrà confrontato con il diagramma Broadside dell'array a 4 elementi.
+\newline
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{A1_orizzontale.png}
+  \caption{Ddr Guadagno [dB], piano orizzontale}
+  \label{fig:A1_orizzontale}
+\end{figure}
+
+
+\section{Array lineare}
+
+Dal singolo elemento si sviluppa l'array 4x1 per ottenere una radiazione broadside.
+Il primo passo è calcolare l'array factor che è dato da:
+\begin{equation}
+AF(\textbf{r})=\sum_{m=1}^{N} a_{m} e^{jm \phi}
+\end{equation}
+dove $\phi=kd\cos\theta$
+Si sceglie una distanza fra gli elementi  $d=\frac{\lambda}{2}$ e si alimenta in fase l'array.
+Il pattern di radiazione calcolato con Matlab e riportato in Figura \ref{fig:Array4E_matlab}
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{Array4E_matlab}
+  \caption{Diagramma Broadside per un array a 4 elementi calcolato con Matlab}
+  \label{fig:Array4E_matlab}
+\end{figure}
+
+
+\subsection*{Corporate feed}
+La rete di alimentazione è composta da una combinazione di divisori a 3dB che distribuiscono la potenza alle 4 antenne.
+Il divisore di potenza divide equamente la potenza senza perdite ma l'impedenza vista dall'ingresso sulle due uscite non è adattata ma equivale a $2Z_{0}$.
+Si rende necessario quindi aggiungere dei trasformatori in $\frac{\lambda}{4}$ da $70 \Omega$ per adattare le uscite.
+L'intera rete è riportata in Figura \ref{fig:Array4E_Schema}
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{Array4E_Schema.jpg}
+  \caption{Schema del corporate feed per 4 elementi}
+  \label{fig:Array4E_Schema}
+\end{figure}
+
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{Array2E_Cad.png}
+  \caption{Modello FEKO dell'array per 2 elementi}
+  \label{fig:Array2E_Cad}
+\end{figure}
+
 
 %------------------------------------------------
 
