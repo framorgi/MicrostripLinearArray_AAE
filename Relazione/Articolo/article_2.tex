@@ -339,14 +339,14 @@ Questo verrà confrontato con il diagramma Broadside dell'array a 4 elementi.
 \end{figure}
 
 
-\section{Array lineare}
+\section{Array Broadside}
 
 Dal singolo elemento si sviluppa l'array 4x1 per ottenere una radiazione broadside.
 Il primo passo è calcolare l'array factor che è dato da:
 \begin{equation}
 AF(\textbf{r})=\sum_{m=1}^{N} a_{m} e^{jm \phi}
 \end{equation}
-dove $\phi=kd\cos\theta$
+dove $\phi=kd\cos\theta$.\newline
 Si sceglie una distanza fra gli elementi  $d=\frac{\lambda}{2}$ e si alimenta in fase l'array.
 Il pattern di radiazione calcolato con Matlab e riportato in Figura \ref{fig:Array4E_matlab}
 \begin{figure}[h!]
@@ -356,7 +356,7 @@ Il pattern di radiazione calcolato con Matlab e riportato in Figura \ref{fig:Arr
 \end{figure}
 
 
-\subsection*{Corporate feed}
+\subsection*{Feed Network}
 La rete di alimentazione è composta da una combinazione di divisori a 3dB che distribuiscono la potenza alle 4 antenne.
 Il divisore di potenza divide equamente la potenza senza perdite ma l'impedenza vista dall'ingresso sulle due uscite non è adattata ma equivale a $2Z_{0}$.
 Si rende necessario quindi aggiungere dei trasformatori in $\frac{\lambda}{4}$ da $70 \Omega$ per adattare le uscite.
