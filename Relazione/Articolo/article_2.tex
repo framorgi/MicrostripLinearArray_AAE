@@ -91,6 +91,7 @@
 
 \begin{document}
 
+\renewcommand{\refname}{Bibliografia}
 % Print the title
 \maketitle
 
@@ -345,15 +346,6 @@ Questo verrà confrontato con il diagramma Broadside dell'array a 4 elementi.
 
 
 \section{Array Broadside}
-
-Dal singolo elemento si sviluppa l'array 4x1 per ottenere una radiazione broadside.
-Il primo passo è calcolare l'array factor che è dato da:
-\begin{equation}
-AF(\phi)=\sum_{m=1}^{N} a_{m} e^{jm \phi}
-\end{equation}
-dove $\phi=kd\cos\theta$.\newline
-Si sceglie una distanza fra gli elementi  $d=\frac{\lambda}{2}$ e si alimenta in fase l'array.
-Il pattern di radiazione calcolato con Matlab e riportato in Figura \ref{fig:Array4E_matlab}
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{Array4E_matlab}
   \caption{Diagramma Broadside per un array a 4 elementi calcolato con Matlab}
@@ -362,52 +354,66 @@ Il pattern di radiazione calcolato con Matlab e riportato in Figura \ref{fig:Arr
 
 
 \subsection*{Feed Network}
-La rete di alimentazione è composta da una combinazione di divisori a 3dB che distribuiscono la potenza alle 4 antenne.
-Il divisore di potenza divide equamente la potenza senza perdite ma l'impedenza vista dall'ingresso sulle due uscite non è adattata ed equivale a $2Z_{0}$.
-Si rende necessario quindi aggiungere dei trasformatori in $\frac{\lambda}{4}$ da $70 \Omega$ per adattare le uscite.
-Lo schema dell'intera rete è riportata in Figura \ref{fig:Array4E_Schema}, mentre in Figura \ref{fig:Array4E_Cad} è riportato il relativo modello  realizzato su FEKO Student.\newline 
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{Array4E_Schema.jpg}
   \caption{Schema del corporate feed per 4 elementi}
   \label{fig:Array4E_Schema}
 \end{figure}
-
-\begin{figure}[h!]
+Dal singolo elemento si sviluppa l'array 4x1 per ottenere una radiazione broadside.
+Il primo passo è calcolare l'array factor che è dato da:
+\begin{equation}
+AF(\phi)=\sum_{m=1}^{N} a_{m} e^{jm \phi}
+\end{equation}
+dove $\phi=kd\cos\theta$.\newline
+Si sceglie una distanza fra gli elementi  $d=\frac{\lambda}{2}$ e si alimenta in fase l'array.
+Il pattern di radiazione calcolato con Matlab e riportato in Figura \ref{fig:Array4E_matlab}.
+\begin{figure}[h]
   \includegraphics[width=\linewidth]{Array2E_Cad.png}
   \caption{Modello FEKO dell'array per 2 elementi}
   \label{fig:Array2E_Cad}
 \end{figure}
+
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{Array4E_Cad.png}
   \caption{Modello FEKO dell'array per 4 elementi}
   \label{fig:Array4E_Cad}
 \end{figure}
 
+La rete di alimentazione è composta da una combinazione di divisori a 3dB che distribuiscono la potenza alle 4 antenne.
+Il divisore di potenza divide equamente la potenza senza perdite ma l'impedenza vista dall'ingresso sulle due uscite non è adattata ed equivale a $2Z_{0}$.
+Si rende necessario quindi aggiungere dei trasformatori in $\frac{\lambda}{4}$ da $70 \Omega$ per adattare le uscite.
+\newline
+Lo schema dell'intera rete è riportata in Figura \ref{fig:Array4E_Schema}, mentre in Figura \ref{fig:Array4E_Cad} è riportato il relativo modello  realizzato su FEKO Student.
 
-I risultati della simulazione mostrano la radiazione broadside  dell'antenna (molto direttiva, tipo "Pencil Beam") con un guadagno massimo di circa 10.7 dBi  (in $\theta =0 \; \forall \phi$).\newline
-\begin{figure}[h!]
+
+
+I risultati della simulazione mostrano la radiazione broadside  dell'antenna (molto direttiva, tipo "Pencil Beam") con un guadagno massimo di circa 10.7 dBi  (in $\theta =0 \;\; \forall \phi$).
+
+\begin{figure}[h]
   \includegraphics[width=\linewidth]{Array4E_Gain.png}
   \caption{Guadagno 3D [dBi]}
   \label{fig:Array4E_Gain}
 \end{figure}
-\begin{figure}[h!]
+\begin{figure}[h]
   \includegraphics[width=\linewidth]{Array4E_verticale.png}
   \caption{Ddr Guadagno [dBi], piano verticale}
   \label{fig:Array4E_verticale}
 \end{figure}
 
-\begin{figure}[h!]
+In Figura \ref{fig:Array4E_S11}, il notch della curva S11 non raggiunge i valori ottenuti in precedenza. \newline
+La complessità della rete di alimentazione richiede che venga  nuovamente "riassestato" l'adattamento tra l'alimentazione e l'intero carico visto da quest'ultima.\
+\begin{figure}[h]
   \includegraphics[width=\linewidth]{Array4E_S11.png}
   \caption{$S_{11} $[dB] in funzione della frequenza [GHz]}
   \label{fig:Array4E_S11}
 \end{figure}
+
 \begin{figure}[h]
   \includegraphics[width=\linewidth]{Array4E_impedenza.png}
   \caption{Impedenza ($Re +Im$) vista dal carico, in funzione della frequenza[GHz]}
   \label{fig:Array4E_impedenza}
 \end{figure}
-In Figura \ref{fig:Array4E_S11}, il notch della curva S11 non raggiunge i valori ottenuti in precedenza. \newline
-La complessità della rete di alimentazione richiede che venga  nuovamente "riassestato" l'adattamento tra l'alimentazione e l'intero carico visto da quest'ultima.
+
 %------------------------------------------------
 
 
@@ -416,20 +422,22 @@ La complessità della rete di alimentazione richiede che venga  nuovamente "rias
 %----------------------------------------------------------------------------------------
 %	REFERENCE LIST
 %----------------------------------------------------------------------------------------
-\renewcommand{\refname}{Bibliografia}
-
+%
 \begin{thebibliography}{99} % Bibliography - this is intentionally simple in this template
 
-\bibitem{Pozar} C. A. Balanis, \emph
+\bibitem{balanis} C. A. Balanis, \emph
 {Antenna Theory Analysis and Design}.
-\bibitem{Balanis} Zhi Ning Chen and Michael Y. W. Chia, \emph
+\bibitem{ning} Zhi Ning Chen and Michael Y. W. Chia, \emph
 {Broadband Planar Antennas, Design and Applications}.
 
 \bibitem{Pozar} Pozar D.M., \emph
 {Microwave engineering}.
-\bibitem{Pozar} Sonia Sharma, C. C. Tripathi and Rahul Rishi, \emph
+\bibitem{matching} Sonia Sharma, C. C. Tripathi and Rahul Rishi, \emph
 {Impedance Matching Techniques for Microstrip
 Patch Antenna}.
+\bibitem{tesi} Andrea Cupido, \emph
+{PROGETTAZIONE ASSISTITA AL CALCOLATORE DI ANTENNE “PATCH”}.
+
 \end{thebibliography}
 
 %----------------------------------------------------------------------------------------
