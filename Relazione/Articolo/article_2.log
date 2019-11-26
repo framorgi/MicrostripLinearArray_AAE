@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.24)  26 NOV 2019 13:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.24)  26 NOV 2019 13:43
 entering extended mode
 **./article_2.tex
 (article_2.tex
@@ -469,14 +469,7 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen175
 \Gin@req@width=\dimen176
 )
-(article_2.aux
-
-LaTeX Warning: Label `Pozar' multiply defined.
-
-
-LaTeX Warning: Label `Pozar' multiply defined.
-
-)
+(article_2.aux)
 \openout1 = `article_2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
@@ -692,6 +685,13 @@ LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <9> not available
 
 
 ]
+
+LaTeX Warning: Reference `eq:freq' on page 2 undefined on input line 166.
+
+
+LaTeX Warning: Reference `eq:L' on page 2 undefined on input line 166.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 187--191
 \T1/pplx/m/n/10 (+20) Il metodo più sem-plice per stu-di-are
  []
@@ -709,11 +709,21 @@ sin[]d
  []
 
 [2 <./images/MICROSTRIPlinefield.jpg>]
-<images/A_Cad.jpg, id=55, 313.4109pt x 176.3388pt>
+
+LaTeX Warning: Reference `fig:A_Cad' on page 3 undefined on input line 245.
+
+<images/A_Cad.jpg, id=52, 313.4109pt x 176.3388pt>
 File: images/A_Cad.jpg Graphic file (type jpg)
 <use images/A_Cad.jpg>
 Package pdftex.def Info: images/A_Cad.jpg  used on input line 248.
 (pdftex.def)             Requested size: 205.0023pt x 115.34265pt.
+
+LaTeX Warning: Reference `fig:A_impedenza' on page 3 undefined on input line 25
+4.
+
+
+LaTeX Warning: Reference `fig:A_S11' on page 3 undefined on input line 254.
+
 
 Underfull \hbox (badness 1888) in paragraph at lines 252--255
 \T1/pplx/m/n/10 (+20) ra-di-anti, au-men-tando i tempi di cal-colo.
@@ -734,12 +744,12 @@ Underfull \hbox (badness 1478) in paragraph at lines 252--255
 \T1/pplx/m/n/10 (+20) Simulato il mod-ello, i primi risul-tati da
  []
 
-<images/A_impedenza.png, id=58, 779.16093pt x 603.0028pt>
+<images/A_impedenza.png, id=53, 779.16093pt x 603.0028pt>
 File: images/A_impedenza.png Graphic file (type png)
 <use images/A_impedenza.png>
 Package pdftex.def Info: images/A_impedenza.png  used on input line 257.
 (pdftex.def)             Requested size: 205.0023pt x 158.65404pt.
-<images/A_S11.png, id=59, 779.16093pt x 603.0028pt>
+<images/A_S11.png, id=54, 779.16093pt x 603.0028pt>
 File: images/A_S11.png Graphic file (type png)
 <use images/A_S11.png>
 Package pdftex.def Info: images/A_S11.png  used on input line 262.
@@ -747,13 +757,17 @@ Package pdftex.def Info: images/A_S11.png  used on input line 262.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/A_Smith.png, id=61, 779.16093pt x 603.0028pt>
+
+LaTeX Warning: Reference `fig:A_impedenza' on page 3 undefined on input line 26
+8.
+
+<images/A_Smith.png, id=55, 779.16093pt x 603.0028pt>
 File: images/A_Smith.png Graphic file (type png)
 <use images/A_Smith.png>
 Package pdftex.def Info: images/A_Smith.png  used on input line 272.
 (pdftex.def)             Requested size: 205.0023pt x 158.65404pt.
 [3 <./images/A_Cad.jpg> <./images/A_impedenza.png>]
-<images/A_orizzontale.png, id=71, 779.16093pt x 603.0028pt>
+<images/A_orizzontale.png, id=64, 779.16093pt x 603.0028pt>
 File: images/A_orizzontale.png Graphic file (type png)
 <use images/A_orizzontale.png>
 Package pdftex.def Info: images/A_orizzontale.png  used on input line 278.
@@ -762,7 +776,7 @@ Package pdftex.def Info: images/A_orizzontale.png  used on input line 278.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/A_verticale.png, id=72, 779.16093pt x 603.0028pt>
+<images/A_verticale.png, id=65, 779.16093pt x 603.0028pt>
 File: images/A_verticale.png Graphic file (type png)
 <use images/A_verticale.png>
 Package pdftex.def Info: images/A_verticale.png  used on input line 284.
@@ -770,7 +784,7 @@ Package pdftex.def Info: images/A_verticale.png  used on input line 284.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/A1_Cad.png, id=73, 799.48688pt x 322.95656pt>
+<images/A1_Cad.png, id=66, 799.48688pt x 322.95656pt>
 File: images/A1_Cad.png Graphic file (type png)
 <use images/A1_Cad.png>
 Package pdftex.def Info: images/A1_Cad.png  used on input line 291.
@@ -778,28 +792,44 @@ Package pdftex.def Info: images/A1_Cad.png  used on input line 291.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+LaTeX Warning: Reference `eq:Rin' on page 4 undefined on input line 296.
+
+
+LaTeX Warning: Reference `fig:A_impedenza' on page 4 undefined on input line 29
+6.
+
 [4 <./images/A_S11.png> <./images/A_Smith.png> <./images/A_orizzontale.png> <./
 images/A_verticale.png> <./images/A1_Cad.png>]
-<images/A1_S11.png, id=89, 770.88pt x 578.16pt>
+
+LaTeX Warning: Reference `fig:A1_Cad' on page 5 undefined on input line 309.
+
+
+LaTeX Warning: Reference `fig:A1_S11' on page 5 undefined on input line 309.
+
+<images/A1_S11.png, id=79, 770.88pt x 578.16pt>
 File: images/A1_S11.png Graphic file (type png)
 <use images/A1_S11.png>
 Package pdftex.def Info: images/A1_S11.png  used on input line 312.
 (pdftex.def)             Requested size: 205.0023pt x 153.7498pt.
-<images/A1_impedenza.png, id=91, 770.88pt x 578.16pt>
+
+LaTeX Warning: Reference `fig:A1_impedenza' on page 5 undefined on input line 3
+16.
+
+<images/A1_impedenza.png, id=80, 770.88pt x 578.16pt>
 File: images/A1_impedenza.png Graphic file (type png)
 <use images/A1_impedenza.png>
 Package pdftex.def Info: images/A1_impedenza.png  used on input line 318.
 (pdftex.def)             Requested size: 205.0023pt x 153.7498pt.
-<images/A1_Smith.png, id=92, 770.88pt x 578.16pt>
+<images/A1_Smith.png, id=81, 770.88pt x 578.16pt>
 File: images/A1_Smith.png Graphic file (type png)
 <use images/A1_Smith.png>
 Package pdftex.def Info: images/A1_Smith.png  used on input line 323.
 (pdftex.def)             Requested size: 205.0023pt x 153.7498pt.
 
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/A1_verticale.png, id=93, 770.88pt x 578.16pt>
+<images/A1_verticale.png, id=82, 770.88pt x 578.16pt>
 File: images/A1_verticale.png Graphic file (type png)
 <use images/A1_verticale.png>
 Package pdftex.def Info: images/A1_verticale.png  used on input line 331.
@@ -807,7 +837,7 @@ Package pdftex.def Info: images/A1_verticale.png  used on input line 331.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/A1_orizzontale.png, id=94, 776.14969pt x 603.0028pt>
+<images/A1_orizzontale.png, id=83, 776.14969pt x 603.0028pt>
 File: images/A1_orizzontale.png Graphic file (type png)
 <use images/A1_orizzontale.png>
 Package pdftex.def Info: images/A1_orizzontale.png  used on input line 336.
@@ -821,36 +851,47 @@ LaTeX Warning: Text page 5 contains only floats.
 [5 <./images/A1_S11.png (PNG copy)> <./images/A1_impedenza.png (PNG copy)> <./i
 mages/A1_Smith.png (PNG copy)> <./images/A1_verticale.png (PNG copy)> <./images
 /A1_orizzontale.png (PNG copy)>]
-<images/Array4E_matlab.png, id=105, 421.575pt x 316.18124pt>
+
+LaTeX Warning: Reference `fig:Array4E_matlab' on page 6 undefined on input line
+ 356.
+
+<images/Array4E_matlab.png, id=93, 421.575pt x 316.18124pt>
 File: images/Array4E_matlab.png Graphic file (type png)
 <use images/Array4E_matlab.png>
 Package pdftex.def Info: images/Array4E_matlab.png  used on input line 358.
 (pdftex.def)             Requested size: 205.0023pt x 153.75298pt.
-<images/Array4E_Schema.jpg, id=108, 963.6pt x 722.7pt>
+
+LaTeX Warning: Reference `fig:Array4E_Schema' on page 6 undefined on input line
+ 368.
+
+
+LaTeX Warning: Reference `fig:Array4E_Cad' on page 6 undefined on input line 36
+8.
+
+<images/Array4E_Schema.jpg, id=94, 963.6pt x 722.7pt>
 File: images/Array4E_Schema.jpg Graphic file (type jpg)
 <use images/Array4E_Schema.jpg>
 Package pdftex.def Info: images/Array4E_Schema.jpg  used on input line 370.
 (pdftex.def)             Requested size: 205.0023pt x 153.74539pt.
-<images/Array2E_Cad.png, id=109, 963.6pt x 770.88pt>
+<images/Array2E_Cad.png, id=95, 963.6pt x 770.88pt>
 File: images/Array2E_Cad.png Graphic file (type png)
 <use images/Array2E_Cad.png>
 Package pdftex.def Info: images/Array2E_Cad.png  used on input line 376.
 (pdftex.def)             Requested size: 205.0023pt x 163.99509pt.
-<images/Array4E_Cad.png, id=110, 963.6pt x 770.88pt>
+<images/Array4E_Cad.png, id=96, 963.6pt x 770.88pt>
 File: images/Array4E_Cad.png Graphic file (type png)
 <use images/Array4E_Cad.png>
 Package pdftex.def Info: images/Array4E_Cad.png  used on input line 381.
 (pdftex.def)             Requested size: 205.0023pt x 163.99509pt.
 
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Array4E_Gain.png, id=111, 963.6pt x 770.88pt>
+<images/Array4E_Gain.png, id=97, 963.6pt x 770.88pt>
 File: images/Array4E_Gain.png Graphic file (type png)
 <use images/Array4E_Gain.png>
 Package pdftex.def Info: images/Array4E_Gain.png  used on input line 389.
 (pdftex.def)             Requested size: 205.0023pt x 163.99509pt.
-<images/Array4E_verticale.png, id=112, 770.88pt x 578.16pt>
+<images/Array4E_verticale.png, id=98, 770.88pt x 578.16pt>
 File: images/Array4E_verticale.png Graphic file (type png)
 <use images/Array4E_verticale.png>
 Package pdftex.def Info: images/Array4E_verticale.png  used on input line 394.
@@ -861,7 +902,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Array4E_S11.png, id=113, 770.88pt x 578.16pt>
+<images/Array4E_S11.png, id=99, 770.88pt x 578.16pt>
 File: images/Array4E_S11.png Graphic file (type png)
 <use images/Array4E_S11.png>
 Package pdftex.def Info: images/Array4E_S11.png  used on input line 400.
@@ -869,13 +910,17 @@ Package pdftex.def Info: images/Array4E_S11.png  used on input line 400.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Array4E_impedenza.png, id=114, 770.88pt x 578.16pt>
+<images/Array4E_impedenza.png, id=100, 770.88pt x 578.16pt>
 File: images/Array4E_impedenza.png Graphic file (type png)
 <use images/Array4E_impedenza.png>
 Package pdftex.def Info: images/Array4E_impedenza.png  used on input line 405.
 (pdftex.def)             Requested size: 205.0023pt x 153.7498pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `fig:Array4E_S11' on page 6 undefined on input line 40
+9.
 
 [6 <./images/Array4E_matlab.png (PNG copy)> <./images/Array4E_Schema.jpg> <./im
 ages/Array2E_Cad.png>]
@@ -906,16 +951,19 @@ Package rerunfilecheck Info: File `article_2.out' has not changed.
 (rerunfilecheck)             Checksum: E69FA08C4F7BD3E25537D126C256F38D;151.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 437.
  ) 
 Here is how much of TeX's memory you used:
- 11454 strings out of 492946
- 175720 string characters out of 3135533
- 311274 words of memory out of 3000000
+ 11458 strings out of 492946
+ 175755 string characters out of 3135533
+ 310007 words of memory out of 3000000
  14795 multiletter control sequences out of 15000+200000
- 62770 words of font info for 253 fonts, out of 3000000 for 9000
+ 62993 words of font info for 256 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,18n,43p,444b,464s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
@@ -927,9 +975,9 @@ s/type1/public/mathpazo/fplmri.pfb><C:/Users/Fra/AppData/Roaming/MiKTeX/2.9/fon
 ts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/pa
 latino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on article_2.pdf (7 pages, 1915027 bytes).
+Output written on article_2.pdf (7 pages, 1912813 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
+ 168 PDF objects out of 1000 (max. 8388607)
  54 named destinations out of 1000 (max. 500000)
  50818 words of extra memory for PDF output out of 51595 (max. 10000000)
 

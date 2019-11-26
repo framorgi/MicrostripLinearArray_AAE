@@ -25,9 +25,10 @@ Il repository contiene i file LateX della relazione
 ## Credits
 
 * Balanis C.A.-Antenna Theory - Analysis and Design 
+* Pozar D.M., Microwave engineering.
 * Chan Sokthai (sokthai@msn.com) -  Department of Engineering, University of Fukui per lo script sul calcolo dell'AF su Matlab
-
-
+* Zhi Ning Chen and Michael Y. W. Chia - Broadband Planar Antennas, Design and Applications.
+* Sonia Sharma, C. C. Tripathi and Rahul Rishi, Impedance Matching Techniques for Microstrip Patch Antenna
 
 
 
