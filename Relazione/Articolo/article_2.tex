@@ -82,6 +82,7 @@
 }
 \date{\today} % Leave empty to omit a date
 \renewcommand{\maketitlehookd}{%
+
 \begin{abstract}
 \noindent Design of a patch antenna linear array for IEEE 802.11 wireless based application. % Dummy abstract text - replace \blindtext with your abstract text
 \end{abstract}
@@ -97,7 +98,7 @@
 %	ARTICLE CONTENTS
 %----------------------------------------------------------------------------------------
 
-\section{Introduction}
+\section{Introduzione}
 
 
 Si vuole progettare un array lineare Broadside di 4 antenne a micro-striscia (patch), destinata ad applicazioni Wireless IEEE 802.11.
@@ -221,16 +222,19 @@ Si può altrimenti scegliere di cambiare il punto di alimentazione spostandosi v
 Si è scelto come primo tentativo per alimentare l'elemento singolo di realizzare un inset feed, calcolando numericamente il valore $y_{0}$ in cui l'impedenza $R_{in}(y=y_{0})= 50 \; \Omega$, ovvero un carico adattato alla linea di alimentazione.
 Sapendo che 
 
-\begin{align*}
-\label{eq:Rin}
+\begin{align} \label{eq:Rin}
+\begin{split}
 R_{in}(y=y_{0})=\frac{1}{2(G_{1}+G_{12})}cos^2\Big( \frac{\pi}{L}y_{0}\Big)=\\
 =R_{in}(y=0)cos^2\Big(\frac{\pi}{L}y_{0}\Big)
-\end{align*}
+\end{split}
+\end{align}
 
-Risolvendo per $y_{0}$ e imponendo $R_{in}(y=y_{0})= 50 \Omega$ si ha 
-\begin{align*}
+Risolvendo per $y_{0}$ e imponendo \newline$R_{in}(y=y_{0})= 50 \Omega$ si ha 
+\begin{align}
+\begin{split}
  y_{0}= \frac {L}{\pi}\arccos\sqrt{\frac{50}{R_{in}(y=0)}}= \\=0.0107 \; m
-\end{align*}
+ \end{split}
+\end{align}
 
 Si effettua quindi uno scavo nella patch fino al punto $y_{0}$ e si connette la linea a $50\; \Omega$.\newline
 Per ottenere un a microstriscia a $50\; \Omega$ si impone una larghezza $W_{50}= 0.003 \; m$
@@ -272,13 +276,13 @@ In Figura \ref{fig:A_impedenza} sono evidenziati i valori di impedenza visti dal
 
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{A_orizzontale.png}
-  \caption{Ddr Guadagno [dB], piano orizzontale}
+  \caption{Ddr Guadagno [dBi], piano orizzontale}
   \label{fig:A_orizzontale}
 \end{figure}
 
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{A_verticale.png}
-  \caption{Ddr Guadagno [dB] e apertura a -3dB, piano verticale}
+  \caption{Ddr Guadagno [dBi] e apertura a -3dB, piano verticale}
   \label{fig:A_verticale}
 \end{figure}
 
@@ -289,7 +293,7 @@ In Figura \ref{fig:A_impedenza} sono evidenziati i valori di impedenza visti dal
   \label{fig:A1_Cad}
 \end{figure}
 Per tentare di migliorare l'adattamento di impedenza ottenuto si è realizzato un secondo modello con le stesse caratteristiche del primo, dove però la linea di alimentazione a $50\Omega$ è stata combinata con un trasformatore in $\frac{\lambda}{4}$.
-In questo modo si vuole adattare l'alimentazione al carico visto sul punto di inserzione il cui valore era dato da \ref{eq:Rin}. \newline Osservando il grafico in Figura \ref{fig:A_impedenza}, il valore reale dell'impedenza raggiunge i $111 \Omega$ a 2.45 GHz. Si realizza quindi una sezione  in $\frac{\lambda}{4}$ di impedenza :
+In questo modo si vuole adattare l'alimentazione al carico visto sul punto di inserzione il cui valore era dato dall'equazione \ref{eq:Rin}. \newline Osservando il grafico in Figura \ref{fig:A_impedenza}, il valore reale dell'impedenza raggiunge i $111 \Omega$ a 2.45 GHz. Si realizza quindi una sezione  in $\frac{\lambda}{4}$ di impedenza :
 \begin{equation}
 Z_{0}=\sqrt{Z_{C}R_{in}}=74.5 \Omega
 \end{equation}
@@ -325,18 +329,19 @@ In seguito sono riportati i risultati relativi al guadagno dell'antenna e i diag
 
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{A1_verticale.png}
-  \caption{Ddr Guadagno [dB] e apertura a -3dB, piano verticale}
+  \caption{Ddr Guadagno [dBi] e apertura a -3dB, piano verticale}
   \label{fig:A1_verticale}
 \end{figure}
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{A1_orizzontale.png}
+  \caption{Ddr Guadagno [dBi], piano orizzontale}
+  \label{fig:A1_orizzontale}
+\end{figure}
+
+
 Il guadagno sul piano verticale raggiunge un massimo di 5.9 dBi, con un apertura a -3dB di circa 160.7$^\circ$
 Il diagramma di radiazione ottenuto è quello tipico di un'antenna patch rettangolare.
 Questo verrà confrontato con il diagramma Broadside dell'array a 4 elementi.
-\newline
-\begin{figure}[h!]
-  \includegraphics[width=\linewidth]{A1_orizzontale.png}
-  \caption{Ddr Guadagno [dB], piano orizzontale}
-  \label{fig:A1_orizzontale}
-\end{figure}
 
 
 \section{Array Broadside}
@@ -344,7 +349,7 @@ Questo verrà confrontato con il diagramma Broadside dell'array a 4 elementi.
 Dal singolo elemento si sviluppa l'array 4x1 per ottenere una radiazione broadside.
 Il primo passo è calcolare l'array factor che è dato da:
 \begin{equation}
-AF(\textbf{r})=\sum_{m=1}^{N} a_{m} e^{jm \phi}
+AF(\phi)=\sum_{m=1}^{N} a_{m} e^{jm \phi}
 \end{equation}
 dove $\phi=kd\cos\theta$.\newline
 Si sceglie una distanza fra gli elementi  $d=\frac{\lambda}{2}$ e si alimenta in fase l'array.
@@ -358,9 +363,9 @@ Il pattern di radiazione calcolato con Matlab e riportato in Figura \ref{fig:Arr
 
 \subsection*{Feed Network}
 La rete di alimentazione è composta da una combinazione di divisori a 3dB che distribuiscono la potenza alle 4 antenne.
-Il divisore di potenza divide equamente la potenza senza perdite ma l'impedenza vista dall'ingresso sulle due uscite non è adattata ma equivale a $2Z_{0}$.
+Il divisore di potenza divide equamente la potenza senza perdite ma l'impedenza vista dall'ingresso sulle due uscite non è adattata ed equivale a $2Z_{0}$.
 Si rende necessario quindi aggiungere dei trasformatori in $\frac{\lambda}{4}$ da $70 \Omega$ per adattare le uscite.
-L'intera rete è riportata in Figura \ref{fig:Array4E_Schema}
+Lo schema dell'intera rete è riportata in Figura \ref{fig:Array4E_Schema}, mentre in Figura \ref{fig:Array4E_Cad} è riportato il relativo modello  realizzato su FEKO Student.\newline 
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{Array4E_Schema.jpg}
   \caption{Schema del corporate feed per 4 elementi}
@@ -372,8 +377,37 @@ L'intera rete è riportata in Figura \ref{fig:Array4E_Schema}
   \caption{Modello FEKO dell'array per 2 elementi}
   \label{fig:Array2E_Cad}
 \end{figure}
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{Array4E_Cad.png}
+  \caption{Modello FEKO dell'array per 4 elementi}
+  \label{fig:Array4E_Cad}
+\end{figure}
 
 
+I risultati della simulazione mostrano la radiazione broadside  dell'antenna (molto direttiva, tipo "Pencil Beam") con un guadagno massimo di circa 10.7 dBi  (in $\theta =0 \; \forall \phi$).\newline
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{Array4E_Gain.png}
+  \caption{Guadagno 3D [dBi]}
+  \label{fig:Array4E_Gain}
+\end{figure}
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{Array4E_verticale.png}
+  \caption{Ddr Guadagno [dBi], piano verticale}
+  \label{fig:Array4E_verticale}
+\end{figure}
+
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{Array4E_S11.png}
+  \caption{$S_{11} $[dB] in funzione della frequenza [GHz]}
+  \label{fig:Array4E_S11}
+\end{figure}
+\begin{figure}[h]
+  \includegraphics[width=\linewidth]{Array4E_impedenza.png}
+  \caption{Impedenza ($Re +Im$) vista dal carico, in funzione della frequenza[GHz]}
+  \label{fig:Array4E_impedenza}
+\end{figure}
+In Figura \ref{fig:Array4E_S11}, il notch della curva S11 non raggiunge i valori ottenuti in precedenza. \newline
+La complessità della rete di alimentazione richiede che venga  nuovamente "riassestato" l'adattamento tra l'alimentazione e l'intero carico visto da quest'ultima.
 %------------------------------------------------
 
 
@@ -382,11 +416,20 @@ L'intera rete è riportata in Figura \ref{fig:Array4E_Schema}
 %----------------------------------------------------------------------------------------
 %	REFERENCE LIST
 %----------------------------------------------------------------------------------------
+\renewcommand{\refname}{Bibliografia}
 
 \begin{thebibliography}{99} % Bibliography - this is intentionally simple in this template
 
+\bibitem{Pozar} C. A. Balanis, \emph
+{Antenna Theory Analysis and Design}.
+\bibitem{Balanis} Zhi Ning Chen and Michael Y. W. Chia, \emph
+{Broadband Planar Antennas, Design and Applications}.
 
-
+\bibitem{Pozar} Pozar D.M., \emph
+{Microwave engineering}.
+\bibitem{Pozar} Sonia Sharma, C. C. Tripathi and Rahul Rishi, \emph
+{Impedance Matching Techniques for Microstrip
+Patch Antenna}.
 \end{thebibliography}
 
 %----------------------------------------------------------------------------------------

@@ -181,7 +181,7 @@ for theta=1:360
     for n=0:N-1
         AF(theta) = AF(theta) + An*exp(j*n*2*pi*d*(cos(deg2rad(theta))-cos(theta_zero*pi/180))) ;
     end
-    AF(theta) = abs(AF(theta));
+    AF(theta) = abs(AF(theta))
     
 end
 % plot the array factor

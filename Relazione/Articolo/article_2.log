@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.24)  21 NOV 2019 23:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.24)  26 NOV 2019 13:36
 entering extended mode
 **./article_2.tex
 (article_2.tex
@@ -469,28 +469,35 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen175
 \Gin@req@width=\dimen176
 )
-(article_2.aux)
+(article_2.aux
+
+LaTeX Warning: Label `Pozar' multiply defined.
+
+
+LaTeX Warning: Label `Pozar' multiply defined.
+
+)
 \openout1 = `article_2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Try loading font information for T1+pplx on input line 91.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Try loading font information for T1+pplx on input line 92.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\t1pplx.fd"
 File: t1pplx.fd 2004/09/06 font definitions for T1/pplx.
 )
-LaTeX Info: Redefining \microtypecontext on input line 91.
+LaTeX Info: Redefining \microtypecontext on input line 92.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -544,7 +551,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: sidecap package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring OFF on input line 91.
+Package hyperref Info: Link coloring OFF on input line 92.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -556,9 +563,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count131
 )
-LaTeX Info: Redefining \ref on input line 91.
-LaTeX Info: Redefining \pageref on input line 91.
-LaTeX Info: Redefining \nameref on input line 91.
+LaTeX Info: Redefining \ref on input line 92.
+LaTeX Info: Redefining \pageref on input line 92.
+LaTeX Info: Redefining \nameref on input line 92.
 
 (article_2.out) (article_2.out)
 \@outlinefile=\write3
@@ -589,15 +596,15 @@ LaTeX Info: Redefining \selectfont on input line 126.
 \RaggedRightParindent=\skip80
 \JustifyingParindent=\skip81
 )
-LaTeX Info: Redefining \celsius on input line 91.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 91.
+LaTeX Info: Redefining \celsius on input line 92.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 92.
 
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 91.
-Package gensymb Info: Using \upOmega for \ohm on input line 91.
+LaTeX Info: Redefining \ohm on input line 92.
+Package gensymb Info: Using \upOmega for \ohm on input line 92.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -628,32 +635,32 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 95.
-LaTeX Font Info:    Try loading font information for OT1+pplx on input line 95.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 96.
+LaTeX Font Info:    Try loading font information for OT1+pplx on input line 96.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ot1pplx.fd"
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 95.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 96.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\omlzplm.fd"
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 95.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 96.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\omszplm.fd"
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 95.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 96.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\omxzplm.fd"
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 95.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 96.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ot1zplm.fd"
@@ -667,35 +674,35 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplx/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 95.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 96.
 
-Underfull \hbox (badness 2970) in paragraph at lines 125--127
+Underfull \hbox (badness 2970) in paragraph at lines 126--128
 \T1/pplx/m/n/10 (+20) Il di-men-sion-a-mento della patch richiede
  []
 
 <images/MICROSTRIPlinefield.jpg, id=16, 564.17226pt x 327.15775pt>
 File: images/MICROSTRIPlinefield.jpg Graphic file (type jpg)
 <use images/MICROSTRIPlinefield.jpg>
-Package pdftex.def Info: images/MICROSTRIPlinefield.jpg  used on input line 135
+Package pdftex.def Info: images/MICROSTRIPlinefield.jpg  used on input line 136
 .
 (pdftex.def)             Requested size: 205.0023pt x 118.87993pt.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <9> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 136.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 137.
 [1{C:/Users/Fra/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 186--190
+Underfull \hbox (badness 10000) in paragraph at lines 187--191
 \T1/pplx/m/n/10 (+20) Il metodo più sem-plice per stu-di-are
  []
 
 
-Underfull \hbox (badness 4048) in paragraph at lines 186--190
+Underfull \hbox (badness 4048) in paragraph at lines 187--191
 \T1/pplx/m/n/10 (+20) l'impedenza dell'antenna a micro-striscia
  []
 
 
-Overfull \hbox (33.40808pt too wide) detected at line 216
+Overfull \hbox (33.40808pt too wide) detected at line 217
 \OML/zplm/m/it/10 G[] \OT1/zplm/m/n/10 = [] [][] [][][][]\OML/zplm/m/it/10 J[]\
 OT1/zplm/m/n/10 (\OML/zplm/m/it/10 k[]Lsin\OT1/zplm/m/n/10 )\OML/zplm/m/it/10 
 sin[]d
@@ -705,37 +712,37 @@ sin[]d
 <images/A_Cad.jpg, id=55, 313.4109pt x 176.3388pt>
 File: images/A_Cad.jpg Graphic file (type jpg)
 <use images/A_Cad.jpg>
-Package pdftex.def Info: images/A_Cad.jpg  used on input line 244.
+Package pdftex.def Info: images/A_Cad.jpg  used on input line 248.
 (pdftex.def)             Requested size: 205.0023pt x 115.34265pt.
 
-Underfull \hbox (badness 1888) in paragraph at lines 248--251
+Underfull \hbox (badness 1888) in paragraph at lines 252--255
 \T1/pplx/m/n/10 (+20) ra-di-anti, au-men-tando i tempi di cal-colo.
  []
 
 
-Underfull \hbox (badness 3895) in paragraph at lines 248--251
+Underfull \hbox (badness 3895) in paragraph at lines 252--255
 \T1/pplx/m/n/10 (+20) pos-si-bile cal-co-lare un'effettiva ra-di-azione
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--251
+Underfull \hbox (badness 10000) in paragraph at lines 252--255
 
  []
 
 
-Underfull \hbox (badness 1478) in paragraph at lines 248--251
+Underfull \hbox (badness 1478) in paragraph at lines 252--255
 \T1/pplx/m/n/10 (+20) Simulato il mod-ello, i primi risul-tati da
  []
 
 <images/A_impedenza.png, id=58, 779.16093pt x 603.0028pt>
 File: images/A_impedenza.png Graphic file (type png)
 <use images/A_impedenza.png>
-Package pdftex.def Info: images/A_impedenza.png  used on input line 253.
+Package pdftex.def Info: images/A_impedenza.png  used on input line 257.
 (pdftex.def)             Requested size: 205.0023pt x 158.65404pt.
 <images/A_S11.png, id=59, 779.16093pt x 603.0028pt>
 File: images/A_S11.png Graphic file (type png)
 <use images/A_S11.png>
-Package pdftex.def Info: images/A_S11.png  used on input line 258.
+Package pdftex.def Info: images/A_S11.png  used on input line 262.
 (pdftex.def)             Requested size: 205.0023pt x 158.65404pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -743,72 +750,64 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <images/A_Smith.png, id=61, 779.16093pt x 603.0028pt>
 File: images/A_Smith.png Graphic file (type png)
 <use images/A_Smith.png>
-Package pdftex.def Info: images/A_Smith.png  used on input line 268.
+Package pdftex.def Info: images/A_Smith.png  used on input line 272.
 (pdftex.def)             Requested size: 205.0023pt x 158.65404pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/A_orizzontale.png, id=62, 779.16093pt x 603.0028pt>
+[3 <./images/A_Cad.jpg> <./images/A_impedenza.png>]
+<images/A_orizzontale.png, id=71, 779.16093pt x 603.0028pt>
 File: images/A_orizzontale.png Graphic file (type png)
 <use images/A_orizzontale.png>
-Package pdftex.def Info: images/A_orizzontale.png  used on input line 274.
+Package pdftex.def Info: images/A_orizzontale.png  used on input line 278.
 (pdftex.def)             Requested size: 205.0023pt x 158.65404pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/A_verticale.png, id=63, 779.16093pt x 603.0028pt>
+<images/A_verticale.png, id=72, 779.16093pt x 603.0028pt>
 File: images/A_verticale.png Graphic file (type png)
 <use images/A_verticale.png>
-Package pdftex.def Info: images/A_verticale.png  used on input line 280.
+Package pdftex.def Info: images/A_verticale.png  used on input line 284.
 (pdftex.def)             Requested size: 205.0023pt x 158.65404pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/A1_Cad.png, id=64, 799.48688pt x 322.95656pt>
+<images/A1_Cad.png, id=73, 799.48688pt x 322.95656pt>
 File: images/A1_Cad.png Graphic file (type png)
 <use images/A1_Cad.png>
-Package pdftex.def Info: images/A1_Cad.png  used on input line 287.
+Package pdftex.def Info: images/A1_Cad.png  used on input line 291.
 (pdftex.def)             Requested size: 205.0023pt x 82.80865pt.
 
-Underfull \vbox (badness 8170) has occurred while \output is active []
-
- [3 <./images/A_Cad.jpg> <./images/A_impedenza.png>]
-
-LaTeX Warning: Text page 4 contains only floats.
-
-
-LaTeX Warning: Reference `eq:Rin' on page 4 undefined on input line 292.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [4 <./images/A_S11.png> <./images/A_Smith.png> <./images/A_orizzontale.png> <./
 images/A_verticale.png> <./images/A1_Cad.png>]
-<images/A1_S11.png, id=86, 770.88pt x 578.16pt>
+<images/A1_S11.png, id=89, 770.88pt x 578.16pt>
 File: images/A1_S11.png Graphic file (type png)
 <use images/A1_S11.png>
-Package pdftex.def Info: images/A1_S11.png  used on input line 308.
+Package pdftex.def Info: images/A1_S11.png  used on input line 312.
 (pdftex.def)             Requested size: 205.0023pt x 153.7498pt.
-<images/A1_impedenza.png, id=88, 770.88pt x 578.16pt>
+<images/A1_impedenza.png, id=91, 770.88pt x 578.16pt>
 File: images/A1_impedenza.png Graphic file (type png)
 <use images/A1_impedenza.png>
-Package pdftex.def Info: images/A1_impedenza.png  used on input line 314.
+Package pdftex.def Info: images/A1_impedenza.png  used on input line 318.
 (pdftex.def)             Requested size: 205.0023pt x 153.7498pt.
-<images/A1_Smith.png, id=89, 770.88pt x 578.16pt>
+<images/A1_Smith.png, id=92, 770.88pt x 578.16pt>
 File: images/A1_Smith.png Graphic file (type png)
 <use images/A1_Smith.png>
-Package pdftex.def Info: images/A1_Smith.png  used on input line 319.
+Package pdftex.def Info: images/A1_Smith.png  used on input line 323.
 (pdftex.def)             Requested size: 205.0023pt x 153.7498pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/A1_verticale.png, id=90, 770.88pt x 578.16pt>
+<images/A1_verticale.png, id=93, 770.88pt x 578.16pt>
 File: images/A1_verticale.png Graphic file (type png)
 <use images/A1_verticale.png>
-Package pdftex.def Info: images/A1_verticale.png  used on input line 327.
+Package pdftex.def Info: images/A1_verticale.png  used on input line 331.
 (pdftex.def)             Requested size: 205.0023pt x 153.7498pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/A1_orizzontale.png, id=91, 776.14969pt x 603.0028pt>
+<images/A1_orizzontale.png, id=94, 776.14969pt x 603.0028pt>
 File: images/A1_orizzontale.png Graphic file (type png)
 <use images/A1_orizzontale.png>
 Package pdftex.def Info: images/A1_orizzontale.png  used on input line 336.
@@ -816,55 +815,109 @@ Package pdftex.def Info: images/A1_orizzontale.png  used on input line 336.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Array4E_matlab.png, id=93, 421.575pt x 316.18124pt>
+
+LaTeX Warning: Text page 5 contains only floats.
+
+[5 <./images/A1_S11.png (PNG copy)> <./images/A1_impedenza.png (PNG copy)> <./i
+mages/A1_Smith.png (PNG copy)> <./images/A1_verticale.png (PNG copy)> <./images
+/A1_orizzontale.png (PNG copy)>]
+<images/Array4E_matlab.png, id=105, 421.575pt x 316.18124pt>
 File: images/Array4E_matlab.png Graphic file (type png)
 <use images/Array4E_matlab.png>
-Package pdftex.def Info: images/Array4E_matlab.png  used on input line 353.
+Package pdftex.def Info: images/Array4E_matlab.png  used on input line 358.
 (pdftex.def)             Requested size: 205.0023pt x 153.75298pt.
-[5 <./images/A1_S11.png (PNG copy)> <./images/A1_impedenza.png (PNG copy)> <./i
-mages/A1_Smith.png (PNG copy)> <./images/A1_verticale.png (PNG copy)>]
-<images/Array4E_Schema.jpg, id=104, 963.6pt x 722.7pt>
+<images/Array4E_Schema.jpg, id=108, 963.6pt x 722.7pt>
 File: images/Array4E_Schema.jpg Graphic file (type jpg)
 <use images/Array4E_Schema.jpg>
-Package pdftex.def Info: images/Array4E_Schema.jpg  used on input line 365.
+Package pdftex.def Info: images/Array4E_Schema.jpg  used on input line 370.
 (pdftex.def)             Requested size: 205.0023pt x 153.74539pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/Array2E_Cad.png, id=105, 963.6pt x 770.88pt>
+<images/Array2E_Cad.png, id=109, 963.6pt x 770.88pt>
 File: images/Array2E_Cad.png Graphic file (type png)
 <use images/Array2E_Cad.png>
-Package pdftex.def Info: images/Array2E_Cad.png  used on input line 371.
+Package pdftex.def Info: images/Array2E_Cad.png  used on input line 376.
 (pdftex.def)             Requested size: 205.0023pt x 163.99509pt.
+<images/Array4E_Cad.png, id=110, 963.6pt x 770.88pt>
+File: images/Array4E_Cad.png Graphic file (type png)
+<use images/Array4E_Cad.png>
+Package pdftex.def Info: images/Array4E_Cad.png  used on input line 381.
+(pdftex.def)             Requested size: 205.0023pt x 163.99509pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/Array4E_Gain.png, id=111, 963.6pt x 770.88pt>
+File: images/Array4E_Gain.png Graphic file (type png)
+<use images/Array4E_Gain.png>
+Package pdftex.def Info: images/Array4E_Gain.png  used on input line 389.
+(pdftex.def)             Requested size: 205.0023pt x 163.99509pt.
+<images/Array4E_verticale.png, id=112, 770.88pt x 578.16pt>
+File: images/Array4E_verticale.png Graphic file (type png)
+<use images/Array4E_verticale.png>
+Package pdftex.def Info: images/Array4E_verticale.png  used on input line 394.
+(pdftex.def)             Requested size: 205.0023pt x 153.7498pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Empty `thebibliography' environment on input line 390.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 394.
-[6 <./images/A1_orizzontale.png (PNG copy)> <./images/Array4E_matlab.png (PNG c
-opy)> <./images/Array4E_Schema.jpg> <./images/Array2E_Cad.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 394.
+<images/Array4E_S11.png, id=113, 770.88pt x 578.16pt>
+File: images/Array4E_S11.png Graphic file (type png)
+<use images/Array4E_S11.png>
+Package pdftex.def Info: images/Array4E_S11.png  used on input line 400.
+(pdftex.def)             Requested size: 205.0023pt x 153.7498pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/Array4E_impedenza.png, id=114, 770.88pt x 578.16pt>
+File: images/Array4E_impedenza.png Graphic file (type png)
+<use images/Array4E_impedenza.png>
+Package pdftex.def Info: images/Array4E_impedenza.png  used on input line 405.
+(pdftex.def)             Requested size: 205.0023pt x 153.7498pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6 <./images/Array4E_matlab.png (PNG copy)> <./images/Array4E_Schema.jpg> <./im
+ages/Array2E_Cad.png>]
+
+LaTeX Warning: Text page 7 contains only floats.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 437.
+[7pdfTeX warning (ext4): destination with the same identifier (name{cite.Pozar}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.437 \end{document}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{cite.Pozar}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.437 \end{document}
+                     <./images/Array4E_Cad.png> <./images/Array4E_Gain.png> <./
+images/Array4E_verticale.png (PNG copy)> <./images/Array4E_S11.png (PNG copy)> 
+<./images/Array4E_impedenza.png (PNG copy)>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 437.
  (article_2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 394.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 394.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 437.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 437.
 Package rerunfilecheck Info: File `article_2.out' has not changed.
-(rerunfilecheck)             Checksum: 7A7744DCD2E6E63BBD5DEC4433F8532F;151.
+(rerunfilecheck)             Checksum: E69FA08C4F7BD3E25537D126C256F38D;151.
 
-LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 394.
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 437.
  ) 
 Here is how much of TeX's memory you used:
- 11398 strings out of 492946
- 174728 string characters out of 3135533
- 310773 words of memory out of 3000000
- 14776 multiletter control sequences out of 15000+200000
- 67042 words of font info for 242 fonts, out of 3000000 for 9000
+ 11454 strings out of 492946
+ 175720 string characters out of 3135533
+ 311274 words of memory out of 3000000
+ 14795 multiletter control sequences out of 15000+200000
+ 62770 words of font info for 253 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,14n,43p,444b,408s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,18n,43p,444b,464s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
@@ -874,9 +927,9 @@ s/type1/public/mathpazo/fplmri.pfb><C:/Users/Fra/AppData/Roaming/MiKTeX/2.9/fon
 ts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/pa
 latino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on article_2.pdf (6 pages, 1339295 bytes).
+Output written on article_2.pdf (7 pages, 1915027 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
- 44 named destinations out of 1000 (max. 500000)
- 46697 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 183 PDF objects out of 1000 (max. 8388607)
+ 54 named destinations out of 1000 (max. 500000)
+ 50818 words of extra memory for PDF output out of 51595 (max. 10000000)
 
