@@ -125,7 +125,7 @@ Il singolo elemento dell'array è costituito da un'antenna a micro-striscia rett
 Viene realizzata su di un substrato di materiale dielettrico, su cui viene fotoinciso uno strato conduttivo di lunghezza L e larghezza W. Sulla faccia opposta del substrato viene posto un piano di massa. L'elemento radiante può essere alimentato in diversi modi: per esempio tramite una linea realizzata in micro-striscia che raggiunge il bordo della patch, oppure con una sonda coassiale che attraversa il substrato.
 \subsection*{Geometria}
 Il dimensionamento della patch richiede l'impiego di equazioni ricavate con metodi numerici o empirici che tengono conto di effetti fisici dovuti alla complessità e non idealità dell'antenna.
-Innanzitutto è necessario tenere presente che per via degli effetti ai bordi, le linee di campo della micro-striscia attraversano due dielettrici differenti, l'aria e il substrato.E' necessario quindi considerare una costante di conducibilità elettrica effettiva $\epsilon_{{reff}}$ che otteniamo è data da 
+Innanzitutto è necessario tenere presente che per via degli effetti ai bordi, le linee di campo della micro-striscia attraversano due dielettrici differenti, l'aria e il substrato.E' necessario quindi considerare una costante di conducibilità elettrica effettiva $\epsilon_{{reff}}$ data da 
 \begin{equation}
 \label{eq:emc}
 \epsilon_{reff}= \frac{\epsilon_{r}+1}{2}+\frac{\epsilon_{r}-1}{2}\Big[1+12\frac{h}{W}\Big]^{-\frac{1}{2}}
@@ -138,9 +138,7 @@ Questa quantità corrisponde alla conducibilità elettrica di un materiale diele
   \caption{Linee di campo E ed H di una microstriscia.}
   \label{fig:linefield}
 \end{figure}
-L'effetto ai bordi è poco influente dato che in linea generale \(L/h\gg 1\), ma non può essere ignorato dato che influisce sulla frequenza risonante dell'antenna.
-
-
+L'effetto ai bordi è poco influente dato che in linea generale \(L/h\gg 1\), ma non può essere ignorato dato che influisce sulla frequenza risonante dell'antenna.\\
 Sempre a causa dell'effetto ai bordi, la lunghezza dell'antenna risulta elettricamente maggiore rispetto alla dimensione reale.
 Il campo elettrico che curva attorno le aperture allunga elettricamente ogni lato di una quantità $\Delta L$ .
 Un'approssimazione di questa quantità è data da
@@ -170,7 +168,7 @@ mentre combinando la \eqref{eq:freq} e la \eqref{eq:L} si può ricavare la lungh
 L=\frac{1}{2f_{r}\sqrt{\mu_{0}\epsilon_{0}}\sqrt{\epsilon_{reff}}}-2\Delta L
 \end{equation}
 
-Note la frequenza centrale $f_{r}= 2.45GHz$, e considerato il  
+Considerando la frequenza centrale $f_{r}= 2.45GHz$, e il  
 substrato di spessore h di 1.6 mm ed $\epsilon_{r}=4.4$,
 si ricavano i valori
 
@@ -187,7 +185,7 @@ si ricavano i valori
 \subsection*{Adattamento di impedenza}
 Il metodo più semplice per studiare l'impedenza dell'antenna a micro-striscia è quello di analizzare il suo modello come linea di trasmissione.
 L'antenna viene vista quindi come una linea di trasmissione i cui estremi (che corrispondono agli "slot" radianti ai bordi della patch) sono modellati come  due paralleli RC.
-I due slot sono identici con ammettenza $Y_{1}=G_{1}+jB_{1}$. Inoltre l'ammettenza totale è puramente reale, data dal parallelo delle due conduttanze  $Y_{in}=Y_{1}+Y_{2}=2G_{1}$ (per via di una "trasformazione di ammettenza"vedi balanis).
+I due slot sono identici con ammettenza $Y_{1}=G_{1}+jB_{1}$. Inoltre l'ammettenza totale è puramente reale, data dal parallelo delle due conduttanze  $Y_{in}=Y_{1}+Y_{2}=2G_{1}$ (\textit{per via di una "trasformazione di ammettenza"vedi balanis}).\\
 Per ricavare il valore di $G_{1}$ si fa riferimento all'equazione 
 \begin{equation}
 G_{1}= \frac{I_{1}}{120\pi}
@@ -218,8 +216,8 @@ G_{12}= \frac{1}{120\pi^2}\int_0^\pi \Big[\dfrac{sin (\big( \frac{k_{0}W}{2} cos
 \end{equation}
 
 Si ottiene quindi l'impedenza in ingresso $R_{in}= 321.42$ per via numerica.
-Scegliendo di alimentare la patch sul bordo (edge feed), con una linea a microstriscia, sarà necessario raggiungere il punto di alimentazione con una linea adattata a $R_{in}$.
-Si può altrimenti scegliere di cambiare il punto di alimentazione spostandosi verso il centro della patch (inset feed), cercando il valore di impedenza più adatto.
+Scegliendo di alimentare la patch sul bordo (edge feed), con una linea a microstriscia, sarà necessario raggiungere il punto di alimentazione con una linea adattata a $R_{in}$.\\
+Si può altrimenti scegliere di cambiare il punto di alimentazione spostandosi verso il centro della patch (inset feed), cercando il valore di impedenza più adatto.\\
 Si è scelto come primo tentativo per alimentare l'elemento singolo di realizzare un inset feed, calcolando numericamente il valore $y_{0}$ in cui l'impedenza $R_{in}(y=y_{0})= 50 \; \Omega$, ovvero un carico adattato alla linea di alimentazione.
 Sapendo che 
 
@@ -252,7 +250,7 @@ La geometria presentata è stata realizzata su FEKO Student, e il modello ottenu
 \end{figure}
 Il modello è stato realizzato su un piano di massa infinito: questo permette di ridurre i tempi di simulazione. In particolare, i bordi di un substrato reale (con dimensioni finite) si comporterebbero anch'essi come elementi radianti, aumentando i tempi  di calcolo.
 Con un piano infinito, questi effetti ai bordi vengono omessi. Di contro, non essendo possibile calcolare un'effettiva radiazione da parte del substrato, non si potranno fare osservazioni attendibili sui valori di potenza irradiata rapportata alla potenza dispersa nel mezzo dielettrico.\newline \newline
-Simulato il modello, i primi risultati da discutere sono quelli riguardanti l'impedenza vista dal carico (Figura\ref{fig:A_impedenza}) e il coefficiente di riflessione $S_{11}$(Figura  \ref{fig:A_S11}).
+Simulato il modello, i primi risultati da discutere sono quelli riguardanti l'impedenza vista dal carico (Figura \ref{fig:A_impedenza}) e il coefficiente di riflessione $S_{11}$(Figura  \ref{fig:A_S11}).
 
  \begin{figure}[h!]
   \includegraphics[width=\linewidth]{A_impedenza.png}
