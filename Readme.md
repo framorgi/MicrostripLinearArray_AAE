@@ -1,25 +1,26 @@
-# Array lineare di antenna a microstriscia per applicazioni IEEE 802.11
+# Microstrip linear patch array antenna for IEEE 802.11 application
 
-Design e simulazione di un array lineare di antenne a microstriscia
+Design and simulation of a linear array of microstrip patch antennas
 
-## Progetto 
+## WorkfFlow
 
-### Fasi 
+### Steps
 
-Per un singolo elemento radiante
+Single radiating element
 
-* Analisi delle specifiche
-* Dimensionamento su Matlab 
-* Simulazione su Student FEKO Edition
+* Definition of specification 
+* Matlab geometry design 
+* Simulation with Student FEKO Edition
 
-Per la schiera
-* Calcolo e dimensionamento dell'Array Factor su matlab 
-* Simulazione della schiera su FEKO Student Edition
+Array
+
+* Matlab design and dimensioning of Array Factor  
+* Aray Simulation eith FEKO Student Edition
 * Tuning
 
 
-## Relazione
-Il repository contiene i file LateX della relazione
+## Report paper
+In this repo you find the LaTex paper
  
  
 ## Credits
