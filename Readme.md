@@ -20,7 +20,7 @@ Array
 
 
 ## Report paper
-In this repo you find the LaTex paper
+In this repo you find the LaTex paper and some matlab scripts used for dimensioning
  
  
 ## Credits
